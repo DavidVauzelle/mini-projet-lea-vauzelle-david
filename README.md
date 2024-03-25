@@ -10,6 +10,8 @@ Structure du site :
             - Un titre Mon top 3 (plus si le temps le permet), sous forme de liste :
                 - Un titre : le nom du jeu
                 - Une image : celle du jeu
+        - Un footer :
+            - Un lien vers mon profil Linkedin
 
     2/ Un lien ou image cliquable pour chaque jeu :
         - Nav bar présente sur chaque page du site
@@ -24,21 +26,42 @@ Structure du site :
 
 
 Etapes du mini-projet :
-1/ Création de l'arborescence de base du projet :
-    - Fichier readme.md
-    - Fichier index.html
-    - Fichier style.css (page accueil)
-    - Fichiers styles (un par page de jeu)
+1/ Création du projet :
+    - Dossier du mini-projet
+    - Créations des fichiers nécessaires à mon projet (index.html, style.css, etc.).
+    - Récupération de ou des Polices
+    - Récupération des images (URL)
+    - Une fivicon
 
 2.1/ Création de la structure de la page d'accueil en HTML
-    - J'intègre les éléments et données de la page d'accueil en HTML
+    - J'intègre les éléments HTML de la page d'accueil.
+        - Header
+            - Nav
+        - Main
+        - H1
+            - Section
+                - Article
+                   - H2
+                   - Img
+                - Article
+                   - H2
+                   - Img 
+                - Article
+                   - H2
+                   - Img 
+        - Footer (optionnel)
+            - a (profil linkedin)
+ 
+    - Ajout des données de la page d'accueil.
 
 2.2/ Mise en forme de la page d'accueil en CSS
-    - Reset CSS
-    - CSS pour mettre en forme la page d'accueil
+    - Reset CSS.
+    - CSS pour mettre en forme la page d'accueil.
 
 3.1/ Création de la structure de la page du 1er jeu en HTML
-    - J'intègre les éléments et données de la page du 1er jeu en HTML
+    - J'intègre les éléments HTML nécessaire à la page
+        - Ex : Header, Nav, main,...
+    - Ajout des données de la page du 1er jeu en HTML
 
 3.2/ Mise en forme de la page du 1er jeu en CSS
     - CSS pour mettre en forme la page du 1er jeu
