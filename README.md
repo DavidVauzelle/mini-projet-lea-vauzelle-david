@@ -20,4 +20,29 @@ Structure du site :
             - Note du jeu
             - Description
             - Vidéo du jeu
-            - Une ou plusieurs images du jeu# mini-projet-lea-vauzelle-david
+            - Une ou plusieurs images du jeu
+
+
+Etapes du mini-projet :
+1/ Création de l'arborescence de base du projet :
+    - Fichier readme.md
+    - Fichier index.html
+    - Fichier style.css (page accueil)
+    - Fichiers styles (un par page de jeu)
+
+2.1/ Création de la structure de la page d'accueil en HTML
+    - J'intègre les éléments et données de la page d'accueil en HTML
+
+2.2/ Mise en forme de la page d'accueil en CSS
+    - Reset CSS
+    - CSS pour mettre en forme la page d'accueil
+
+3.1/ Création de la structure de la page du 1er jeu en HTML
+    - J'intègre les éléments et données de la page du 1er jeu en HTML
+
+3.2/ Mise en forme de la page du 1er jeu en CSS
+    - CSS pour mettre en forme la page du 1er jeu
+
+4/ Répétition des étapes 3.1 et 3.2 pour chaque jeu
+
+5/ Vérification du code avec les validateurs HTML/CSS et correction de bug.
