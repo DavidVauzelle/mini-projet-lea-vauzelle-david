@@ -31,7 +31,7 @@ Etapes du mini-projet :
     - Créations des fichiers nécessaires à mon projet (index.html, style.css, etc.).
     - Récupération de la, ou des Polices (Font).
     - Récupération des images (URL).
-    - Une fivicon.
+    - Création d'une fivicon.
 
 2.1/ Création de la structure de la page d'accueil en HTML
     - J'intègre les éléments HTML de la page d'accueil.
