@@ -1,0 +1,37 @@
+main {
+    margin: 25px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Ceviche One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+}
+
+p {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 25px;   
+}
+
+h2 {
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    box-sizing: content-box;
+    width: 75%;
+    border-radius: 20px;
+}
