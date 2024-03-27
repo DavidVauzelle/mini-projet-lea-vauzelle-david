@@ -1,0 +1,13 @@
+main {
+    /* margin: 25px; */
+    text-align: center;
+}
+
+.background-cyberpunk-2077 {
+    background-image: url(/images/pages_jeux/cyberpunk_2077/cyberpunk_background.jpg);
+}
+
+.background-cyberpunk-2077 {
+    box-sizing: content-box;
+    width: 100%;
+}
