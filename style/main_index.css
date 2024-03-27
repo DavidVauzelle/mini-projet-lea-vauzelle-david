@@ -1,11 +1,11 @@
 main {
-    margin: 25px;
+    /* margin: 25px; */
     text-align: center;
 }
 
 
 h2 {
-    padding: 55px 0;
+    padding: 70px 0;
     font-size: 40px;
     font-family: "Caesar Dressing", system-ui;
     font-weight: 400;
@@ -14,6 +14,7 @@ h2 {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 img {

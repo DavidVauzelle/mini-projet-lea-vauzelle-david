@@ -28,19 +28,25 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 75px;
-    padding-top: 75px;
+    padding-top: 100px;
     text-align: center;
 }
 
 p {
+    text-align: center;
+    white-space: break-spaces;
+    line-height: 1.5;
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal; 
     font-size: 25px; 
     padding: 100px; 
-    line-height: 1.5;
-    text-align: center;
+    
+    
 }
 
+footer {
+    padding-top: 100px;
+}
 
