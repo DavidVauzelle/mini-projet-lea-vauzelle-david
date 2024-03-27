@@ -18,7 +18,29 @@ nav a, nav p {
     font-size: 25px;
 }
 
-nav a:hover, nav p:hover{
+nav a:hover{
     background-color: #ddd;
     color: black;
 }
+
+h1 {
+    font-family: "Ceviche One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+p {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 25px; 
+    padding: 100px; 
+    line-height: 1.5;
+    text-align: center;
+}
+
+

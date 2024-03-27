@@ -3,23 +3,6 @@ main {
     text-align: center;
 }
 
-h1 {
-    font-family: "Ceviche One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 75px;
-    padding-top: 75px;
-}
-
-p {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal; 
-    font-size: 25px; 
-    padding: 100px; 
-    line-height: 1.5;
-}
 
 h2 {
     padding: 55px 0;
