@@ -74,7 +74,8 @@ p, li {
 
 .texte-section-cyberpunk-2 {
     font-size: 25px;
-    line-height: 1.2;
+    /* white-space: normal; */
+    word-spacing: 2px;
 }
 
 .night-city, .nouveautes {
@@ -84,6 +85,7 @@ p, li {
 
 .video-1, .video-2 {
     padding: 25px 0;
+    align-content: end;
 }
 
 .section-cyberpunk-3 {
