@@ -1,3 +1,7 @@
+body {
+    width: 1920px;
+}
+
 nav {
     background-color: #333;
     display: flex;
@@ -21,18 +25,14 @@ nav a:hover{
     color: black;
 }
 
-.background-cyberpunk-2077 {
+.section-cyberpunk-1 {
     background-image: url(/images/pages_jeux/cyberpunk_2077/cyberpunk_background.jpg);
     height: 100%;
     width: auto;
     display: flex;
 }
 
-article {
-    width: 50%;
-}
-
-.background-h2 {
+h2, h3 {
     margin: 0;
     padding: 25px;
     font-size: 40px;
@@ -50,11 +50,47 @@ p, li {
     line-height: 1.5;
 }
 
-p {
-    /* text-align: center; */
-    white-space: break-spaces;
-    padding: 100px; 
+.section-cyberpunk-2 {
+    display: flex;
+    padding: 100px 0 100px;
+    gap: 25px;
+    background-color: #000000;
 }
+
+.section-cyberpunk-2 div {
+    flex: 1;
+    width: 50%;
+}
+
+.titre-section-cyberpunk-2, .texte-section-cyberpunk-2 {
+    color: #ffffff;    
+    margin: 0;
+    padding: 25px;
+}
+
+.titre-section-cyberpunk-2 {
+    font-size: 35px;
+}
+
+.texte-section-cyberpunk-2 {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.night-city, .nouveautes {
+    align-content: start;
+    text-align: center;
+}
+
+.video-1, .video-2 {
+    padding: 25px 0;
+}
+
+.section-cyberpunk-3 {
+    background-color: #fcee0a;
+}
+
+
 
 footer {
     padding-top: 100px;
