@@ -1,0 +1,61 @@
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav a, nav p {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.background-cyberpunk-2077 {
+    background-image: url(/images/pages_jeux/cyberpunk_2077/cyberpunk_background.jpg);
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+article {
+    width: 50%;
+}
+
+.background-h2 {
+    margin: 0;
+    padding: 25px;
+    font-size: 40px;
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, li {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+p {
+    /* text-align: center; */
+    white-space: break-spaces;
+    padding: 100px; 
+}
+
+footer {
+    padding-top: 100px;
+}

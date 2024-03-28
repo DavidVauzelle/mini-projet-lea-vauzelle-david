@@ -21,6 +21,11 @@ nav a:hover{
     color: black;
 }
 
+main {
+    overflow: hidden;
+    text-align: center;
+}
+
 h1 {
     font-family: "Ceviche One", system-ui;
     font-weight: 400;
@@ -28,6 +33,14 @@ h1 {
     font-size: 75px;
     padding-top: 100px;
     text-align: center;
+}
+
+h2 {
+    margin: 70px 0;
+    font-size: 40px;
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 p {
@@ -40,6 +53,17 @@ p {
     font-style: normal; 
     font-size: 25px; 
     padding: 100px; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    box-sizing: content-box;
+    width: 75%;
+    border-radius: 20px;
 }
 
 footer {
