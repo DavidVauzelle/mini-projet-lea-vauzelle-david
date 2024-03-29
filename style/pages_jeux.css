@@ -29,7 +29,7 @@ nav a:hover{
 .section-cyberpunk-1 {
     background-image: url(/images/pages_jeux/cyberpunk_2077/cyberpunk_background.jpg);
     height: 1080px;
-    width: auto;
+    width: 100%;
     display: flex;
 }
 
