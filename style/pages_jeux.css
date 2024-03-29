@@ -89,10 +89,27 @@ p, li {
     align-content: center;
 }
 
+
 .galerie-cyberpunk-3 {
     background-color: #fcee0a;
 }
 
-footer {
-    padding-top: 100px;
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 25px 100px;
 }
+
+.galerie-images {
+    display: flex;
+    gap: 20px 20px;
+    padding: 25px;
+}
+
+img {
+    width: 100%;
+    flex: 1;
+    border-radius: 20px;
+}     
+
+padding-bottom: 100px;
