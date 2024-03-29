@@ -53,7 +53,7 @@ p, li {
 .section-cyberpunk-2 {
     display: flex;
     padding: 100px 0 100px;
-    gap: 25px;
+    /* gap: 25px; */
     background-color: #000000;
 }
 
@@ -84,13 +84,14 @@ p, li {
 }
 
 .video-1, .video-2 {
-    padding: 25px 0;
+    padding: 25px;
     align-content: end;
 }
 
 .section-cyberpunk-3 {
     background-color: #fcee0a;
 }
+
 
 
 
