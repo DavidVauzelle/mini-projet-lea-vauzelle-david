@@ -54,7 +54,6 @@ p, li {
 .section-cyberpunk-2 {
     display: flex;
     padding: 100px 0 100px;
-    /* gap: 25px; */
     background-color: #000000;
 }
 
@@ -99,13 +98,17 @@ p, li {
     padding: 25px 25px 100px;
 }
 
+.galerie-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
 img {
     width: 100%;
     border-radius: 20px;
 }   
 
-.galerie-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+img:hover {
+    transform: scale(1.25);
 }
