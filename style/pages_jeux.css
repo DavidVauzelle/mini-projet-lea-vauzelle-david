@@ -1,5 +1,6 @@
 body {
-    width: 1920px;
+    /* width: 1920px; */
+    width: 100%;
 }
 
 nav {
@@ -75,7 +76,7 @@ p, li {
 .texte-section-cyberpunk-2 {
     font-size: 25px;
     /* white-space: normal; */
-    word-spacing: 2px;
+    word-spacing: 1px;
 }
 
 .night-city, .nouveautes {
@@ -85,14 +86,12 @@ p, li {
 
 .video-1, .video-2 {
     padding: 25px;
-    align-content: end;
+    align-content: center;
 }
 
 .galerie-cyberpunk-3 {
     background-color: #fcee0a;
 }
-
-
 
 footer {
     padding-top: 100px;
