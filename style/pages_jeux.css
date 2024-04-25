@@ -1,5 +1,15 @@
-body {
+/* body {
     width: 1920px;
+    height: 100vh;
+    width: 100vh;
+} */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
 }
 
 nav {
@@ -103,11 +113,15 @@ p, li {
     gap: 25px;
 }
 
+.galerie-images div {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
 img {
     width: 100%;
-    border-radius: 20px;
 }   
 
-/* img:hover {
+img:hover {
     transform: scale(1.25);
-} */
+}
