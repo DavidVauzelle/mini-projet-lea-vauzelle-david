@@ -1,3 +1,7 @@
+body {
+    background-color: #F5F0D7;
+}
+
 nav {
     background-color: #333;
     display: flex;

@@ -1,0 +1,6 @@
+Evolution du projet
+Galerie :
+    En JS :
+        Cliquer sur les images pour les mettre en plus grand
+    En CSS :
+        Effet de zoom au survol
