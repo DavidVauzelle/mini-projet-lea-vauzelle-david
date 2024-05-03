@@ -111,6 +111,8 @@ Etapes du projet :
 
 3/ Ajouter d'autres jeux
     - Conserver la structure HTML du la page "Cyberpunk 2077" et compléter la page avec les informations propre à chaque jeu
+    - Si le nombre de jeux est > 3, modifier la page "index.html" :
+        - Réduire la taille des photos pour en mettre deux ou trois par ligne et les disposer les unes en dessous des autres
 
 4/ Améliorer le code 
     - Eviter les doublons, code non indispensable,...
