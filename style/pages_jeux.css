@@ -1,15 +1,8 @@
-/* body {
-    width: 1920px;
-    height: 100vh;
-    width: 100vh;
-} */
-
-html {
-    height: 100%;
-}
-
 body {
-    height: 100vh;
+    max-height: 100vh;
+    margin: auto 0;
+    box-sizing: content-box;
+    max-width: 1920px;
 }
 
 nav {
@@ -37,9 +30,27 @@ nav a:hover{
 
 .section-cyberpunk-1 {
     background-image: url(/images/pages_jeux/cyberpunk_2077/cyberpunk_background.jpg);
+    background-size: cover;
+    background-position: center;
     height: 1080px;
-    width: 100%;
     display: flex;
+}
+
+.description-background, .informations-background {
+    width: 50%;
+    padding: 25px;
+}
+
+.informations-background {
+    text-align: end;
+}
+
+.informations2-background {
+    text-align: center;
+}
+
+p, ul {
+    margin: 25px;
 }
 
 h2, h3 {
@@ -83,7 +94,6 @@ p, li {
 
 .texte-section-cyberpunk-2 {
     font-size: 25px;
-    /* white-space: normal; */
     word-spacing: 1px;
 }
 
