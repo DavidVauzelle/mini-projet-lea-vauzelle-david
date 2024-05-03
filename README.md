@@ -1,5 +1,7 @@
 mini-projet-lea
 
+Première période de stage (deux semaines).
+
 L'idée du projet : Quelques-uns de mes jeux vidéo préférés.
 
 Structure du site :
@@ -71,3 +73,54 @@ Etapes du mini-projet :
 4/ Répétition des étapes 3.1 et 3.2 pour chaque jeu.
 
 5/ Vérification du code avec les validateurs HTML/CSS et correction de bug.
+
+
+Deuxième période de stage (Juin).
+
+Cahier des charges du projet :
+- Rajouter un lien vers mon profil LinkedIn (nav bar ou footer)
+- Rajouter un lien vers "Qui suis-je" / "Qui somme nous"
+- Rajouter un lien "Nous contacter" (en PHP)
+- Finir la page "Cyberpunk 2077"
+- Rendre la galerie d'images dynamique (en JS)
+- Rajouter d'autres jeux
+- Essayer d'améliorer le site côté front (niveau code)
+- Rendre le site responsive
+- Créer une base de données pour stocker les informations des jeux (en PHP)
+- Rendre les pages des jeux dynamiques, en utilisant la bdd pour récupérer les informations des jeux (en PHP)
+
+Etapes du projet :
+1/ Fini la page "Cyberpunk 2077"
+    - Finir la 1ère section de la page
+    - Rendre la galerie d'images dynamique (en JS)
+
+2/ Améliorer la page "index.html"
+    - Rajouter un lien vers mon profil LinkedIn
+    - Rajouter un lien vers "Qui somme nous"
+
+2.1/ Rajouter un lien "Nous contacter" (en PHP)
+    - Créer un petit formulaire pour que le visiteur puisse nous contacter :
+        - Pour ajouter des fonctionnalités sur le site
+        - Proposer des jeux à ajouter sur le site
+        - Autres demandes
+            Pour cela, l'utilisateur doit renseigner plusieurs informations :
+                - Pseudo ou Prénom
+                - Sexe
+                - Age
+                - Mail
+
+3/ Ajouter d'autres jeux
+    - Conserver la structure HTML du la page "Cyberpunk 2077" et compléter la page avec les informations propre à chaque jeu
+
+4/ Améliorer le code 
+    - Eviter les doublons, code non indispensable,...
+
+5/ Rendre le site responsive
+
+6/ Créer la base de données
+    - Pour stocker toutes les informations des jeux
+    - Pour gérer les formulaires de contact
+
+7/ Rendre les pages du site dynamique en récupérant les données dans la bdd avec du PHP/Requête SQL
+
+Je ne suis pas sur de l'ordre des taches, notemment pour la partie "base de données"
