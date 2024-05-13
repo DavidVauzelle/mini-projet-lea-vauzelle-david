@@ -36,6 +36,10 @@ p {
     padding: 100px; 
 }
 
+.images-accueil {
+    padding-bottom: 100px;
+}
+
 a {
     text-decoration: none;
     color: black;

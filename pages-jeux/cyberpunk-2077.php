@@ -6,7 +6,7 @@
     <meta name="description" content="Voici mon deuxième projet"> 
     <title>Fiche de : Cyberpunk 2077.</title>
     <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/pages_jeux.css">
+    <link rel="stylesheet" href="../style/pages-jeux.css">
     <link rel="stylesheet" href="../style/nav.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,29 +82,31 @@
                 <h2>Galerie</h2>
                 <div class="galerie-images">
                     <div>
-                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/v-masculin.jpg" alt="Photo de V fumant en extérieur">
+                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/v-masculin.jpg" alt="Photo de V fumant en extérieur">
                     </div>
                     <div>
-                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/fight-2.jpg" alt="Photo ou la tension est au maximum">
+                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/fight-2.jpg" alt="Photo ou la tension est au maximum">
                     </div>
                     <div>
-                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/judy.jpg" alt="Photo de la belle Judy">
+                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/judy.jpg" alt="Photo de la belle Judy">
                     </div>
                     <div>
-                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/ville-2.jpg" alt="Photo d'un batiment de la ville">
+                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/ville-2.jpg" alt="Photo d'un batiment de la ville">
                     </div>
                     <div>
-                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/fight-1.jpg" alt="Photo d'un fight ou la lame est proche">
+                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/fight-1.jpg" alt="Photo d'un fight ou la lame est proche">
                     </div>
                     <div>
-                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/ville-1.jpg" alt="Photo d'un plan de la ville depuis la voie rapide">
+                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/ville-1.jpg" alt="Photo d'un plan de la ville depuis la voie rapide">
                     </div>
                 </div>
             </div>
         </section>
+        
+        <!-- Pour récupérer le footer -->
+        <?php include '../footer.html';?>
     </main>
 
-    <!-- Pour récupérer le footer -->
-    <?php include '../footer.html';?>
+    
 </body>
 </html>

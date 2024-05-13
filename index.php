@@ -36,7 +36,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="images-accueil">
             <article>
                 <a href="./pages-jeux/cyberpunk-2077.php">
                     <h2>Cyberpunk 2077</h2>    

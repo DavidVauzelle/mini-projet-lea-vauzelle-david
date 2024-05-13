@@ -1,5 +1,4 @@
 footer {
-    padding-top: 100px;
     height: 50px;
 }
 
@@ -13,7 +12,7 @@ footer {
 .contenu-footer a, .contenu-footer p {
     display: block;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
@@ -25,7 +24,7 @@ footer {
 .icone-footer {
     height: 32px;
     width: 32px;
-    object-fit: cover;    
+    object-fit: cover;
 }
 
 footer a:hover{
