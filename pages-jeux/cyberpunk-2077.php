@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Voici mon deuxième projet"> 
     <title>Fiche de : Cyberpunk 2077.</title>
-    <link rel="stylesheet" href="/style/reset.css">
-    <link rel="stylesheet" href="/style/pages_jeux.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/pages_jeux.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Caveat:wght@400..700&family=Ceviche+One&display=swap" rel="stylesheet">
@@ -14,12 +16,8 @@
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html#accueil">ACCUEIL</a>
-            <a href="/pages_jeux/cyberpunk_2077.html">Cyberpunk 2077</a>
-            <a href="/pages_jeux/red_dead_redemption_2.html">Red Dead Redemption 2</a>
-            <a href="/pages_jeux/the_last_of_us_remastered.html">The Last of US Remastered</a>
-        </nav>    
+        <!-- Pour récupérer la nav bar -->
+        <?php include '../nav.html';?>    
     </header>
 
     <main>
@@ -84,32 +82,29 @@
                 <h2>Galerie</h2>
                 <div class="galerie-images">
                     <div>
-                        <img src="/images/pages_jeux/cyberpunk_2077/galerie/v-masculin.jpg" alt="Photo de V fumant en extérieur">
+                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/v-masculin.jpg" alt="Photo de V fumant en extérieur">
                     </div>
                     <div>
-                        <img src="/images/pages_jeux/cyberpunk_2077/galerie/fight-2.jpg" alt="Photo ou la tension est au maximum">
+                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/fight-2.jpg" alt="Photo ou la tension est au maximum">
                     </div>
                     <div>
-                        <img src="/images/pages_jeux/cyberpunk_2077/galerie/judy.jpg" alt="Photo de la belle Judy">
+                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/judy.jpg" alt="Photo de la belle Judy">
                     </div>
                     <div>
-                        <img src="/images/pages_jeux/cyberpunk_2077/galerie/ville-2.jpg" alt="Photo d'un batiment de la ville">
+                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/ville-2.jpg" alt="Photo d'un batiment de la ville">
                     </div>
                     <div>
-                        <img src="/images/pages_jeux/cyberpunk_2077/galerie/fight-1.jpg" alt="Photo d'un fight ou la lame est proche">
+                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/fight-1.jpg" alt="Photo d'un fight ou la lame est proche">
                     </div>
                     <div>
-                        <img src="/images/pages_jeux/cyberpunk_2077/galerie/ville-1.jpg" alt="Photo d'un plan de la ville depuis la voie rapide">
+                        <img src="../images/pages_jeux/cyberpunk_2077/galerie/ville-1.jpg" alt="Photo d'un plan de la ville depuis la voie rapide">
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <p>Copyright - VAUZELLE David</p>
-        </nav>    
-    </footer>
+    <!-- Pour récupérer le footer -->
+    <?php include '../footer.html';?>
 </body>
 </html>

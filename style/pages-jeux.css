@@ -46,13 +46,10 @@ nav a:hover{
 }
 
 .description-background p, .informations-background ul {
-    height: 25%;
-    width: 50%;
     text-align: center;
 }
 
 .informations-background ul {
-    width: 25%;
     align-self: center;
 }
 
@@ -68,11 +65,8 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 35%;
 }
-
-/* .description-background p .informations-background li {
-    font-weight: 500;
-} */
 
 p, ul {
     margin: 25px;

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Voici mon deuxième projet"> 
-    <title>Fiche de : The Last of US Remastered.</title>
+    <title>Fiche de : Read Dead Redemption 2.</title>
     <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/pages_jeux.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Caveat:wght@400..700&family=Ceviche+One&display=swap" rel="stylesheet">
@@ -14,22 +16,15 @@
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html#accueil">ACCUEIL</a>
-            <a href="/pages_jeux/cyberpunk_2077.html">Cyberpunk 2077</a>
-            <a href="/pages_jeux/red_dead_redemption_2.html">Red Dead Redemption 2</a>
-            <a href="/pages_jeux/the_last_of_us_remastered.html">The Last of US Remastered</a>
-        </nav>    
+        <!-- Pour récupérer la nav bar -->
+        <?php include '../nav.html';?>    
     </header>
 
     <main>
         
     </main>
 
-    <footer>
-        <nav>
-            <p>Copyright - VAUZELLE David</p>
-        </nav>    
-    </footer>
+    <!-- Pour récupérer le footer -->
+    <?php include '../footer.html';?>
 </body>
 </html>

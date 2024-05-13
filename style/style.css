@@ -2,29 +2,6 @@ body {
     background-color: #F5F0D7;
 }
 
-nav {
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-}
-
-nav a, nav p {
-    display: block;
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-}
-
-nav a:hover{
-    background-color: #ddd;
-    color: black;
-}
-
 main {
     overflow: hidden;
     text-align: center;
@@ -69,20 +46,4 @@ img {
     width: 75%;
     border-radius: 20px;
     width: 1080px;
-}
-
-footer {
-    padding-top: 100px;
-    height: 50px;
-}
-
-.nav-footer {
-    /* display: flex; */
-    align-items: center;
-}
-
-.icone-footer {
-    height: 32px;
-    width: 32px;
-    align-self: center;
 }

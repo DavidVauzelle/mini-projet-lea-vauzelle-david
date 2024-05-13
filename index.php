@@ -7,6 +7,8 @@
     <title>Quelque uns de mes jeux préférés</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Caveat:wght@400..700&family=Ceviche+One&display=swap" rel="stylesheet">
@@ -14,12 +16,16 @@
 
 <body>
     <header>
+
+        <!-- Pour récupérer la nav bar -->
+        <!-- <?php include 'nav.html';?> -->
         <nav>
             <a id="accueil">ACCUEIL</a>
-            <a href="pages_jeux/cyberpunk_2077.html">Cyberpunk 2077</a>
-            <a href="/pages_jeux/red_dead_redemption_2.html">Red Dead Redemption 2</a>
-            <a href="/pages_jeux/the_last_of_us_remastered.html">The Last of US Remastered</a>
+            <a href="./pages-jeux/cyberpunk-2077.php">Cyberpunk 2077</a>
+            <a href="./pages-jeux/red-dead-redemption-2.php">Red Dead Redemption 2</a>
+            <a href="./pages-jeux/the-last-of-us-remastered.php">The Last of US Remastered</a>
         </nav>
+
         <h1>Sélection de mes jeux préférés</h1>
         <p>
             Vous êtes passionnés de jeux vidéo ? Alors vous êtes au bon endroit.
@@ -32,36 +38,28 @@
     <main>
         <section>
             <article>
-                <a href="/pages_jeux/cyberpunk_2077.html">
+                <a href="./pages-jeux/cyberpunk-2077.php">
                     <h2>Cyberpunk 2077</h2>    
                 </a>
-                <img src="/images/cyberpunk_2077.jpg" alt="Image d'illustration de Cyberpunk 2077">
+                <img src="./images/cyberpunk-2077.jpg" alt="Image d'illustration de Cyberpunk 2077">
             </article>
             <article>
-                <a href="/pages_jeux/red_dead_redemption_2.html">
+                <a href="./pages-jeux/red-dead-redemption-2.php">
                     <h2>Red Dead Redemption 2</h2>    
                 </a>
-                <img src="/images/red_dead_redemption_2.jpg" alt="Image d'illustration de Red Dead Redemption 2">  
+                <img src="./images/red-dead-redemption-2.jpg" alt="Image d'illustration de Red Dead Redemption 2">  
             </article>
             <article>
-                <a href="/pages_jeux/the_last_of_us_remastered.html">
+                <a href="./pages-jeux/the-last-of-us-remastered.php">
                     <h2>The Last of US Ramastered</h2>    
                 </a>
-                <img src="/images/the_last_of_us_remastered.jpg" alt="Image d'illustration de The Last of US Remastered">   
+                <img src="./images/the-last-of-us-remastered.jpg" alt="Image d'illustration de The Last of US Remastered">   
             </article>
         </section>    
     </main>
 
-    <footer>
-        <nav class="nav-footer">
-            <p>Copyright - VAUZELLE David</p>
-            <a href="http://www.linkedin.com/feed/" target="_blank">
-                <img class="icone-footer" src="/images/linkedIn_icon_circle.png" alt="Icone de Linkedin">
-            </a>
-            <a href="https://www.lecoleatypique.fr/" target="_blank">
-                <img class="icone-footer" src="/images/" alt="Icone de l'Ecole Atypique">
-            </a>
-        </nav>    
-    </footer>
+    <!-- Pour récupérer le footer -->
+    <?php include 'footer.html';?>
+    
 </body>
 </html>
