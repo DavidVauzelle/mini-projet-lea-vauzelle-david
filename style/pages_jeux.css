@@ -1,7 +1,11 @@
+*::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     max-height: 100vh;
     margin: auto 0;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     max-width: 1920px;
 }
 
@@ -41,13 +45,34 @@ nav a:hover{
     padding: 25px;
 }
 
-.informations-background {
-    text-align: end;
-}
-
-.informations2-background {
+.description-background p, .informations-background ul {
+    height: 25%;
+    width: 50%;
     text-align: center;
 }
+
+.informations-background ul {
+    width: 25%;
+    align-self: center;
+}
+
+.informations-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .description-background p .informations-background li {
+    font-weight: 500;
+} */
 
 p, ul {
     margin: 25px;
@@ -58,14 +83,14 @@ h2, h3 {
     padding: 25px;
     font-size: 40px;
     font-family: "Caesar Dressing", system-ui;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
 p, li {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal; 
     font-size: 25px;
     line-height: 1.5;
