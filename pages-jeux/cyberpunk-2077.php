@@ -6,8 +6,8 @@
     <meta name="description" content="Voici mon deuxième projet"> 
     <title>Fiche de : Cyberpunk 2077.</title>
     <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/pages-jeux.css">
     <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/pages-jeux.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

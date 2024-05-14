@@ -19,11 +19,15 @@
 
         <!-- Pour récupérer la nav bar -->
         <!-- <?php include 'nav.html';?> -->
-        <nav>
-            <a id="accueil">ACCUEIL</a>
-            <a href="./pages-jeux/cyberpunk-2077.php">Cyberpunk 2077</a>
-            <a href="./pages-jeux/red-dead-redemption-2.php">Red Dead Redemption 2</a>
-            <a href="./pages-jeux/the-last-of-us-remastered.php">The Last of US Remastered</a>
+
+        <nav class="navbar">
+            <a href="./index.php#accueil">ACCUEIL</a>
+                <div class="liens-pages-jeux">
+                    <a href="./pages-jeux/cyberpunk-2077.php">Cyberpunk 2077</a>
+                    <a href="./pages-jeux/red-dead-redemption-2.php">Red Dead Redemption 2</a>
+                    <a href="./pages-jeux/the-last-of-us-remastered.php">The Last of US Remastered</a>
+                </div>
+            <a href="./pages-jeux/contacts.php">Contacts</a>
         </nav>
 
         <h1>Sélection de mes jeux préférés</h1>

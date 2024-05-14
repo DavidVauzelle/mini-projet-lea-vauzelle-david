@@ -1,4 +1,12 @@
+*::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
+    max-height: 100vh;
+    margin: auto 0;
+    /* box-sizing: content-box; */
+    max-width: 1920px;
     background-color: #F5F0D7;
 }
 
