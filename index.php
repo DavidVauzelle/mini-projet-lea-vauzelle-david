@@ -27,7 +27,7 @@
                     <a href="./pages-jeux/red-dead-redemption-2.php">Red Dead Redemption 2</a>
                     <a href="./pages-jeux/the-last-of-us-remastered.php">The Last of US Remastered</a>
                 </div>
-            <a href="./pages-jeux/contacts.php">Contacts</a>
+            <a href="./contact.php">Contacts</a>
         </nav>
 
         <h1>Sélection de mes jeux préférés</h1>

@@ -1,0 +1,22 @@
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: auto 0;
+    max-width: 1920px;
+    background-color: #F5F0D7;
+}
+
+.contenaire-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.formulaire-contact {
+    display: flex;
+    flex-direction: column;
+}

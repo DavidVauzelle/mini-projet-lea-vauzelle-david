@@ -2,6 +2,7 @@
     background-color: #333;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .liens-pages-jeux {
@@ -11,14 +12,12 @@
 
 .navbar a:first-child {
     /* Pour placer le PREMIER lien à gauche en prenant tout l'espace disponible */
-    margin-right: auto; 
-    
+    margin-right: auto;
 }
   
 .navbar a:last-child {
     /* Pour placer le DERNIER lien à droite en prenant tout l'espace disponible */
-    flex-direction: row; margin-left: auto; 
-    
+    margin-left: auto; 
 }
 
 nav a, nav p {
