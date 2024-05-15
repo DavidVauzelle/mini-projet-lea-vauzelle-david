@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <?php include 'font.html';?> 
     <title>Formulaire de contact </title>
 </head>
 <body>

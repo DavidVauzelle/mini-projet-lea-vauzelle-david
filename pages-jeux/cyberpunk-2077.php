@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="../style/nav.css">
     <link rel="stylesheet" href="../style/pages-jeux.css">
     <link rel="stylesheet" href="../style/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Caveat:wght@400..700&family=Ceviche+One&display=swap" rel="stylesheet">
+    <?php include '../font.html';?>
 </head>
 
 <body>
@@ -34,7 +32,7 @@
             <div class="informations-background">
                 <h2>Cyberpunk 2077</h2>    
                 <ul>
-                    <li>Platforme : PS4, PS5</li>
+                    <li>Plateforme : PS4, PS5</li>
                     <li>Sortie : 10/12/2020</li>
                     <li>Editeur : CD PROJECT</li>
                     <li>Genres : RPG, Spécifiques</li>
