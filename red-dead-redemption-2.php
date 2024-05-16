@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="../style/pages_jeux.css">
     <link rel="stylesheet" href="../style/nav.css">
     <link rel="stylesheet" href="../style/footer.css">
-    <?php include '../font.html';?>
+    <?php include '/font.html';?>
 </head>
 
 <body>
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include '../nav.html';?>    
+        <?php include '/nav.html';?>    
     </header>
 
     <main>
@@ -23,6 +23,6 @@
     </main>
 
     <!-- Pour récupérer le footer -->
-    <?php include '../footer.html';?>
+    <?php include '/footer.html';?>
 </body>
 </html>

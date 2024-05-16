@@ -16,7 +16,7 @@
 
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include './nav.html';?>    
+        <?php include '/nav.html';?>    
     </header>
 
     <div class="contenaire-contact">
