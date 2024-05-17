@@ -3,29 +3,103 @@
 }
 
 body {
-    height: 100vh;
     margin: auto 0;
-    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
     background-color: #F5F0D7;
-    overflow: hidden;
+    height: 100vh;
 }
 
-.contenaire-contact {
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 50%; */
+    height: 100vh;
+    width: 100%;
+}
+
+.contenaire-contact {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulaire-contact {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+}
+
+.champs-formulaire {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, label {
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
+    text-align: center;
+    padding-top: 0;
+    margin: 20px 0;
+    font-size: 38px;
+}
+
+label {
+    font-size: 25px;
+    margin: 15px;
+}
+
+.champ-message-formulaire label {
+    margin: 15px 0;
+}
+
+.formulaire-contact input, .champs-formulaire select {
+    padding: 5px 5px;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+
+.textarea-formulaire-contact {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 16px;
+    resize: none; /* N'autorise pas le redimensionnement manuel par l'utilisateur */
+    overflow: auto;
+}
+
+.formulaire-contact input, .textarea-formulaire-contact, .champs-formulaire select {
+    border: 1px solid #ccc;
+}
+
+.champ-message-formulaire {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.button-contact {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 15px 15px;
+}
+
+.input-button-formulaire {
     font-family: "Jersey 25 Charted", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    cursor: pointer;
 }

@@ -6,26 +6,21 @@
     <meta name="description" content="Voici mon deuxième projet"> 
     <title>Quelque uns de mes jeux préférés</title>
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="./style/nav-footer.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/nav.css">
-    <link rel="stylesheet" href="style/footer.css">
     <?php include 'font.html';?>
 </head>
 
 <body>
     <header>
-
-        <!-- Pour récupérer la nav bar -->
-        <!-- <?php include 'nav.html';?> -->
-
         <nav class="navbar">
-            <a href="./index.php#accueil">ACCUEIL</a>
+            <a href="/index.php#accueil">ACCUEIL</a>
                 <div class="liens-pages-jeux">
-                    <a href="./pages-jeux/cyberpunk-2077.php">Cyberpunk 2077</a>
-                    <a href="./pages-jeux/red-dead-redemption-2.php">Red Dead Redemption 2</a>
-                    <a href="./pages-jeux/the-last-of-us-remastered.php">The Last of US Remastered</a>
+                    <a href="cyberpunk-2077.php">Cyberpunk 2077</a>
+                    <a href="red-dead-redemption-2.php">Red Dead Redemption 2</a>
+                    <a href="the-last-of-us-remastered.php">The Last of US Remastered</a>
                 </div>
-            <a href="/contact.php">Contacts</a>
+            <a href="contact.php">Contacts</a>
         </nav>
 
         <h1>Sélection de mes jeux préférés</h1>
@@ -40,19 +35,19 @@
     <main>
         <section class="images-accueil">
             <article>
-                <a href="/cyberpunk-2077.php">
+                <a href="cyberpunk-2077.php">
                     <h2>Cyberpunk 2077</h2>    
                 </a>
                 <img src="./images/cyberpunk-2077.jpg" alt="Image d'illustration de Cyberpunk 2077">
             </article>
             <article>
-                <a href="/red-dead-redemption-2.php">
+                <a href="red-dead-redemption-2.php">
                     <h2>Red Dead Redemption 2</h2>    
                 </a>
                 <img src="./images/red-dead-redemption-2.jpg" alt="Image d'illustration de Red Dead Redemption 2">  
             </article>
             <article>
-                <a href="/the-last-of-us-remastered.php">
+                <a href="the-last-of-us-remastered.php">
                     <h2>The Last of US Ramastered</h2>    
                 </a>
                 <img src="./images/the-last-of-us-remastered.jpg" alt="Image d'illustration de The Last of US Remastered">   
@@ -61,7 +56,6 @@
     </main>
 
     <!-- Pour récupérer le footer -->
-    <?php include 'footer.html';?>
-    
+    <?php include 'footer.html';?> 
 </body>
 </html>

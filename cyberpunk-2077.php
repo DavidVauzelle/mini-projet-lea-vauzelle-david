@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Voici mon deuxième projet"> 
     <title>Fiche de : Cyberpunk 2077.</title>
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/nav.css">
-    <link rel="stylesheet" href="../style/pages-jeux.css">
-    <link rel="stylesheet" href="../style/footer.css">
-    <?php include '../font.html';?>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/pages-jeux.css">
+    <link rel="stylesheet" href="./style/nav-footer.css">
+    <?php include 'font.html';?>
 </head>
 
 <body>
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include '../nav.html';?>    
+        <?php include 'nav.html';?>    
     </header>
 
     <main>
-        <section class="section-cyberpunk-1">	
-            <div class="description-background">
+        <section class="cyberpunk-section-1">	
+            <div class="cyberpunk-description-background">
                <h2>VOTRE LÉGENDE COMMENCE ICI</h2>    
                 <p>
                     Incarnez V, un mercenaire cyberpunk, et faites tout ce qui est en votre pouvoir 
@@ -29,7 +28,7 @@
                     C'est ici que les légendes s'écrivent. À quoi ressemblera la vôtre ?    
                 </p>    
             </div>
-            <div class="informations-background">
+            <div class="cyberpunk-informations-background">
                 <h2>Cyberpunk 2077</h2>    
                 <ul>
                     <li>Plateforme : PS4, PS5</li>
@@ -80,31 +79,30 @@
                 <h2>Galerie</h2>
                 <div class="galerie-images">
                     <div>
-                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/v-masculin.jpg" alt="Photo de V fumant en extérieur">
+                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/v-masculin.jpg" alt="Photo de V fumant en extérieur">
                     </div>
                     <div>
-                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/fight-2.jpg" alt="Photo ou la tension est au maximum">
+                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/fight-2.jpg" alt="Photo ou la tension est au maximum">
                     </div>
                     <div>
-                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/judy.jpg" alt="Photo de la belle Judy">
+                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/judy.jpg" alt="Photo de la belle Judy">
                     </div>
                     <div>
-                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/ville-2.jpg" alt="Photo d'un batiment de la ville">
+                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/ville-2.jpg" alt="Photo d'un batiment de la ville">
                     </div>
                     <div>
-                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/fight-1.jpg" alt="Photo d'un fight ou la lame est proche">
+                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/fight-1.jpg" alt="Photo d'un fight ou la lame est proche">
                     </div>
                     <div>
-                        <img src="../images/pages-jeux/cyberpunk-2077/galerie/ville-1.jpg" alt="Photo d'un plan de la ville depuis la voie rapide">
+                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/ville-1.jpg" alt="Photo d'un plan de la ville depuis la voie rapide">
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Pour récupérer le footer -->
-        <?php include '../footer.html';?>
+        </section>   
     </main>
-
+    
+    <!-- Pour récupérer le footer -->
+     <?php include './footer.html';?>
     
 </body>
 </html>

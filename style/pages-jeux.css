@@ -9,7 +9,7 @@ body {
     max-width: 1920px;
 }
 
-.section-cyberpunk-1 {
+.cyberpunk-section-1 {
     background-image: url(../images/pages-jeux/cyberpunk-2077/cyberpunk-background.jpg);
     background-size: cover;
     background-position: center;
@@ -17,27 +17,49 @@ body {
     display: flex;
 }
 
-.description-background, .informations-background {
+.rdr2-section-1 {
+    background-image: url(../images/red-dead-redemption-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+    display: flex;
+}
+
+.cyberpunk-description-background, .cyberpunk-informations-background, .rdr2-description-background, .rdr2-informations-background {
     width: 50%;
     padding: 25px;
 }
 
-.description-background p, .informations-background ul {
+.rdr2-description-background, .rdr2-informations-background {
+    color: #ffffff;
+}
+
+.rdr2-informations-background {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    align-content: flex-end;
+    align-self: flex-end;
+    /* text-align: center; */
+}
+
+.cyberpunk-description-background p, .cyberpunk-informations-background ul {
     text-align: center;
 }
 
-.informations-background ul {
+.cyberpunk-informations-background ul {
     align-self: center;
 }
 
-.informations-background {
+.cyberpunk-informations-background {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.description-background {
+.cyberpunk-description-background {
     display: flex;
     flex-direction: column;
     justify-content: center;
