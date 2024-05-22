@@ -48,8 +48,7 @@
                         placeholder="votre message ici"
                         rows="5"
                         maxlength="500" 
-                        required>
-                    </textarea>      
+                        required></textarea>      
                 </div>
                 <div class="button-contact">
                     <input class="input-button-formulaire" type="submit" value="Envoyer">

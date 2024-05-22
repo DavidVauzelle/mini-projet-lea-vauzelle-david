@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include 'nav.html';?>    
+        <?php include 'nav.html';?>
     </header>
 
     <main>
@@ -40,27 +40,33 @@
         </section>
 
         <section class="rdr2-section-2">
-            <div class="test">
-                <h3 class="titre-rdr2-section-2">Une épopée sur l’honneur et la loyauté</h3>
+            <h3 class="titre-rdr2-section-2">Une épopée sur l’honneur et la loyauté</h3>
+            <div class="container-rdr-2">
                 <div class="rdr2">
-                    <!-- <h3 class="titre-rdr2-section-2">Une épopée sur l’honneur et la loyauté</h3> -->
                     <p class="texte-rdr2-section-2">
                         Dans la peau d'Arthur Morgan, bras droit fidèle du chef charismatique Dutch van der Linde, vous pourrez vivre, chasser, faire la fête, 
                         commettre des vols et vous battre aux côtés des autres hors-la-loi de votre bande que vous finirez par considérer comme votre famille, 
                         dont Bill Williamson, Javier Escuella, Sadie Adler, Micah Bell, John Marston, Charles Smith, Susan Grimshaw et bien plus encore. 
                         La bande de Van der Linde est un groupe de personnages plus vrais que nature qui vous feront vivre une expérience exceptionnelle.
                     </p>
-                    <iframe class="rdr2-videos" width="50%" height="315" src="https://www.youtube.com/embed/Dw_oH5oiUSE?si=9GC_b8PsQ0NF3G1G" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                        encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </div>
+                <div class="rdr2">
+                    <iframe class="rdr2-videos" width="75%" height="315" src="https://www.youtube.com/embed/Dw_oH5oiUSE?si=Jca4WU1zkX0ci7Xd" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
                 </div>    
             </div>
-            <div class="test">
-                <h3 class="titre-rdr2-section-2">Le monde de Red Dead Online</h3>
+
+            <h3 class="titre-rdr2-section-2">Le monde de Red Dead Online</h3>
+            <div class="container-rdr-2">
                 <div class="rdr-online">
-                    <!-- <h3 class="titre-rdr2-section-2">Le monde de Red Dead Online</h3> -->
+                    <iframe class="rdr2-videos" width="75%" height="315" src="https://www.youtube.com/embed/x4BoyKLw1Mk?si=5HwndpPkBQO-14lc" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="rdr-online">
                     <p class="texte-rdr2-section-2"> 
                         Affrontez des représentants de la loi, des bandes de hors-la-loi et des animaux sauvages redoutables 
                         afin de vous forger une réputation dans l’Ouest. 
@@ -71,15 +77,11 @@
                         ou devenez un naturaliste pour connaître tous les secrets du règne animal et 
                         bien plus encore dans un monde riche en détails et d’une profondeur à couper le souffle.
                     </p>      
-                    <iframe class="rdr2-videos" width="50%" height="315" src="https://www.youtube.com/embed/x4BoyKLw1Mk?si=Q70eNKDuKJApLEnV" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
                 </div>     
-            </div>
-            
+            </div>   
         </section>
+
+        
     </main>
 
     <!-- Pour récupérer le footer -->
