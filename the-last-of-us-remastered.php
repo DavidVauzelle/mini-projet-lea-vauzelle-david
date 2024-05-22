@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/pages-jeux.css">
     <link rel="stylesheet" href="./style/nav-footer.css">
-    <?php include 'font.html';?>
+    <?php include 'font.php';?>
 </head>
 
 <body>
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include 'nav.html';?>    
+        <?php include 'nav.php';?>    
     </header>
 
     <main>
@@ -22,6 +22,6 @@
     </main>
 
     <!-- Pour récupérer le footer -->
-    <?php include 'footer.html';?>
+    <?php include 'footer.php';?>
 </body>
 </html>

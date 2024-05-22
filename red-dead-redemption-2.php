@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/pages-jeux.css">
     <link rel="stylesheet" href="./style/nav-footer.css">
-    <?php include 'font.html';?>
+    <?php include 'font.php';?>
 </head>
 
 <body>
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include 'nav.html';?>
+        <?php include 'nav.php';?>
     </header>
 
     <main>
-        <section class="rdr2-section-1">	
-            <div class="rdr2-description-background">
+        <section class="section-1-rdr2">	
+            <div class="description-background-rdr2">
                 <h2>Hors-la-loi pour toujours</h2>    
                 <p>
                     Amérique, 1899. Arthur Morgan et le gang de Van der Linde sont des hors-la-loi fugitifs. 
@@ -28,7 +28,7 @@
                     Alors que des querelles internes menacent de faire voler la bande en éclats, Arthur est tiraillé entre ses propres idéaux et sa loyauté envers la bande qui l’a élevé.
                 </p>    
             </div>
-            <div class="rdr2-informations-background">
+            <div class="informations-background-rdr2">
                 <ul>
                     <li>Plateforme : PS4</li>
                     <li>Sortie : 26/10/2018</li>
@@ -39,8 +39,8 @@
             </div>    
         </section>
 
-        <section class="rdr2-section-2">
-            <h3 class="titre-rdr2-section-2">Une épopée sur l’honneur et la loyauté</h3>
+        <section class="section-2-pages-jeux">
+            <h3 class="titre-h3">Une épopée sur l’honneur et la loyauté</h3>
             <div class="container-rdr-2">
                 <div class="rdr2">
                     <p class="texte-rdr2-section-2">
@@ -58,7 +58,7 @@
                 </div>    
             </div>
 
-            <h3 class="titre-rdr2-section-2">Le monde de Red Dead Online</h3>
+            <h3 class="titre-h3">Le monde de Red Dead Online</h3>
             <div class="container-rdr-2">
                 <div class="rdr-online">
                     <iframe class="rdr2-videos" width="75%" height="315" src="https://www.youtube.com/embed/x4BoyKLw1Mk?si=5HwndpPkBQO-14lc" 
@@ -81,10 +81,40 @@
             </div>   
         </section>
 
-        
+        <section class="galerie-rdr-2">
+            <div class="galerie">
+                <h2 class="titre-h2">Galerie</h2>
+                <div class="galerie-images">
+                    <div>
+                        <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/308fd1badeb457d60440b983217929f5.jpg?im=Resize=1920" 
+                        alt="Imgage d'un magnifique paysage">
+                    </div>
+                    <div>
+                        <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6adffdef3a1b7b97262e6a4b56c939a4.jpg?im=Resize=1920"
+                        alt="Image d'une ballade de groupe">
+                    </div>
+                    <div>
+                    <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/94be4c766906a96e85eeb3e3f2990681.jpg?im=Resize=1920"
+                        alt="Image d'un passage en ville">
+                    </div>
+                    <div>
+                        <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/90de3821f45756f1a01a350924250946.jpg?im=Resize=1920"
+                        alt="Image du boucher découpant la viande">
+                    </div>
+                    <div>
+                        <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/13d9a394b35625e065cf8bbf8e35c45b.jpg?im=Resize=1920"
+                        alt="Image d'une puissante et magnifique créature">
+                    </div>
+                    <div>
+                        <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/77776e33ef89349ed37e4eaea67d5a7a.jpg?im=Resize=1920" 
+                        alt="Image elle dépote cette arme !">
+                    </div>
+                </div>
+            </div>
+        </section>   
     </main>
 
     <!-- Pour récupérer le footer -->
-    <?php include 'footer.html';?>
+    <?php include 'footer.php';?>
 </body>
 </html>

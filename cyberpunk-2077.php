@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/pages-jeux.css">
     <link rel="stylesheet" href="./style/nav-footer.css">
-    <?php include 'font.html';?>
+    <?php include 'font.php';?>
 </head>
 
 <body>
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include 'nav.html';?> 
+        <?php include 'nav.php';?> 
     </header>
 
     <main>
-        <section class="cyberpunk-section-1">	
-            <div class="cyberpunk-description-background">
+        <section class="section-1-cyberpunk">	
+            <div class="description-background-cyberpunk">
                <h2>VOTRE LÉGENDE COMMENCE ICI</h2>    
                 <p>
-                    Incarnez V, un mercenaire cyberpunk, et faites tout ce qui est en votre pouvoir 
-                    pour vous faire un nom à Night City : une mégapole où les seules choses qui 
-                    comptent sont le pouvoir, le glamour et les modifications corporelles. 
-                    C'est ici que les légendes s'écrivent. À quoi ressemblera la vôtre ?    
+                    Préparez le coup du siècle : volez un implant unique qui est la clé de l'immortalité, et forgez votre légende dans le vaste mode ouvert qu'est Night City. 
+                    Ici, les choix que vous faites changeront le cours de l'histoire et les relations avec les personnages qui vous entourent. 
+                    Complétez des missions diverses et variées pour vous faire un nom, et passez de simple mercenaire à cyberpunk de légende. 
+                    Au fil de l'aventure, vous lèverez également le voile sur le mystère qui plane autour de ce fameux implant que tout le monde vous envie.    
                 </p>    
             </div>
-            <div class="cyberpunk-informations-background">
+            <div class="informations-background-cyberpunk">
                 <h2>Cyberpunk 2077</h2>    
                 <ul>
                     <li>Plateforme : PS4, PS5</li>
@@ -40,7 +40,7 @@
             </div>    
         </section>
 
-        <section class="section-cyberpunk-2">
+        <!-- <section class="section-cyberpunk-2">
             <div class="night-city">
                 <h3 class="titre-section-cyberpunk-2">NIGHT CITY</h3>    
                 <p class="texte-section-cyberpunk-2">
@@ -51,7 +51,7 @@
                 </p>
             </div>    
             <div class="video-1">
-                <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Y4x_FjuwV4M?si=nFP0qZ_Cof6KSqd7" title="YouTube video player" 
+                <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/Y4x_FjuwV4M?si=nFP0qZ_Cof6KSqd7" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                 web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
                 </iframe>
@@ -66,35 +66,78 @@
                 </p>      
             </div> 
             <div class="video-2">
-                <!-- <iframe width="560" -->
-                <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
+                <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                 web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div> 
+        </section> -->
+
+        <section class="section-2-pages-jeux">
+            <h3 class="titre-h3">NIGHT CITY</h3>
+            <div class="container-pages-jeux">
+                <div class="contenu-jeux">
+                    <p class="texte-section-2-pages-jeux">
+                        Night City regorge de choses à faire, d'endroits à voir et de gens à rencontrer. 
+                        Et vous êtes libre d'aller où vous voulez, quand vous voulez, comme vous voulez. 
+                        Des quartiers chics de Corpo Plaza aux vastes étendues sauvages des Badlands, 
+                        Night City foisonne de secrets qui ne demandent qu'à être découverts.
+                    </p>
+                </div>
+                <div class="jeu">
+                    <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/Y4x_FjuwV4M?si=nFP0qZ_Cof6KSqd7" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
+                    </iframe>
+                </div>    
+            </div>
+
+            <h3 class="titre-h3">Le monde de Red Dead Online</h3>
+            <div class="page-jeu-container">
+                <div class="contenu-jeu">
+                    <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="contenu-jeu">
+                    <p class="texte-page-jeu-section-2"> 
+                        Découvrez Cyberpunk 2077 sous un nouveau jour : montez à bord du système de métro entièrement fonctionnel NCART, 
+                        écoutez des morceaux premios en explorant les rues grâce au Radioport,  
+                        ou invitez votre partenaire à l'appartement de V pour passer un peu de temps ensemble.  
+                        Toutes ces fonctionnalités et bien d'autres vous attendent dans Night City !
+                    </p>      
+                </div>     
+            </div>   
         </section>
 
-        <section class="galerie-cyberpunk-3">
+        <section class="galerie-cyberpunk">
             <div class="galerie">
                 <h2>Galerie</h2>
                 <div class="galerie-images">
                     <div>
-                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/v-masculin.jpg" alt="Photo de V fumant en extérieur">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/wallpapers/1920x1080/A-mercenary-on-the-rise-en.jpg" 
+                        alt="Image de V fumant en extérieur">
                     </div>
                     <div>
-                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/fight-2.jpg" alt="Photo ou la tension est au maximum">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg" 
+                        alt="Image ou la tension est au maximum">
                     </div>
                     <div>
-                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/judy.jpg" alt="Photo de la belle Judy">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077_Lucky_number_13_RGB-en.jpg" 
+                        alt="Image de la belle Judy">
                     </div>
                     <div>
-                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/ville-2.jpg" alt="Photo d'un batiment de la ville">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Lets_go_to_the_mall-en.jpg" 
+                        alt="Image d'un batiment de la ville">
                     </div>
                     <div>
-                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/fight-1.jpg" alt="Photo d'un fight ou la lame est proche">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077_Always_bring_a_gun_to_a_knife-fight_RGB-en.jpg" 
+                        alt="Image d'un fight ou la lame est proche">
                     </div>
                     <div>
-                        <img src="./images/pages-jeux/cyberpunk-2077/galerie/ville-1.jpg" alt="Photo d'un plan de la ville depuis la voie rapide">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077_Love_this_town_RGB-en.jpg" 
+                        alt="Image d'un plan de la ville depuis la voie rapide">
                     </div>
                 </div>
             </div>
@@ -102,7 +145,7 @@
     </main>
     
     <!-- Pour récupérer le footer -->
-     <?php include './footer.html';?>
+     <?php include 'footer.php';?>
     
 </body>
 </html>

@@ -126,7 +126,7 @@ p, li {
     line-height: 1.5;
 }
 
-.titre-section-cyberpunk-2, .texte-section-cyberpunk-2, .titre-rdr2-section-2, .texte-rdr2-section-2 {
+.titre-section-cyberpunk-2, .texte-section-cyberpunk-2, .titre-h2, .titre-h3, .texte-rdr2-section-2 {
     color: #ffffff;    
     margin: 0;
     padding: 25px;
@@ -151,8 +151,13 @@ p, li {
     align-content: center;
 }
 
-.galerie-cyberpunk-3 {
+/* Galeries Images Pages Jeux */
+.galerie-cyberpunk {
     background-color: #fcee0a;
+}
+
+.galerie-rdr-2 {
+    background-color: #c00;
 }
 
 .galerie {

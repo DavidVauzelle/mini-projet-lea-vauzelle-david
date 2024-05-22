@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="./style/nav-footer.css">
     <link rel="stylesheet" href="style/style.css">
-    <?php include 'font.html';?>
+    <?php include 'font.php';?>
 </head>
 
 <body>
@@ -56,6 +56,6 @@
     </main>
 
     <!-- Pour récupérer le footer -->
-    <?php include 'footer.html';?> 
+    <?php include 'footer.php';?> 
 </body>
 </html>
