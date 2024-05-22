@@ -8,8 +8,8 @@
     justify-content: space-between;
 }
 
-.contenu-footer {
-    justify-content: center;
+.liens-pages-jeux a {
+    padding-right: 20px;
 }
 
 .liens-pages-jeux {
@@ -48,6 +48,10 @@ nav a:hover{
     height: 32px;
     width: 32px;
     object-fit: cover;
+}
+
+.contenu-footer {
+    justify-content: center;
 }
 
 footer a:hover{
