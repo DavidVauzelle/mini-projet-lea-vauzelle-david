@@ -66,7 +66,6 @@ label {
 .formulaire-contact input, .champs-formulaire select {
     padding: 5px 5px;
     margin: 0 15px;
-    border-radius: 5px;
 }
 
 .textarea-formulaire-contact {
@@ -81,6 +80,7 @@ label {
 
 .formulaire-contact input, .textarea-formulaire-contact, .champs-formulaire select {
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .champ-message-formulaire {

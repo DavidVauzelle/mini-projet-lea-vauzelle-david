@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/nav-footer.css">
     <link rel="stylesheet" href="./style/contact.css">
-    <?php include 'font.html';?> 
+    <?php include 'font.php';?> 
     <title>Formulaire de contact </title>
 </head>
 <body>
     <header>
         <!-- Pour récupérer la nav bar -->
-        <?php include 'nav.html';?>    
+        <?php include 'nav.php';?>    
     </header>
 
     <main>   
@@ -22,15 +22,15 @@
                 <h1>Contactez-nous</h1>
                 <div class="champs-formulaire">
                     <label for="name">Nom* : </label>
-                    <input type="text" id="name" name="text" required>     
+                    <input type="text" id="name" name="text" placeholder="Votre Nom" required>     
                 </div> 
                 <div class="champs-formulaire">
                     <label for="first_name">Prénom* : </label>
-                    <input type="text" id="first_name" name="text" required> 
+                    <input type="text" id="first_name" name="text" placeholder="Votre Prénom" required> 
                 </div>  
                 <div class="champs-formulaire">
                     <label for="email">Email* : </label>
-                    <input type="email" id="email" name="email" required> 
+                    <input type="email" id="email" name="email" placeholder="Votre adresse Email"required> 
                 </div>
                 <div class="champs-formulaire">
                     <label for="contact_choice">Sujet* : </label>
@@ -59,6 +59,6 @@
     </main>
 
     <!-- Pour récupérer le footer -->
-    <?php include 'footer.html';?>
+    <?php include 'footer.php';?>
 </body>
 </html>
