@@ -5,99 +5,6 @@
 body {
     max-height: 100vh;
     margin: auto 0;
-    max-width: 1920px;
-}
-
-.cyberpunk-section-1 {
-    background-image: url(../images/pages-jeux/cyberpunk-2077/cyberpunk-background.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 1080px;
-    display: flex;
-}
-
-.cyberpunk-description-background, .cyberpunk-informations-background, .rdr2-description-background, .rdr2-informations-background {
-    width: 50%;
-    padding: 25px;
-}
-
-.cyberpunk-informations-background {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cyberpunk-description-background {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 35%;
-}
-
-.rdr2-description-background, .rdr2-informations-background {
-    color: #ffffff;
-}
-
-.rdr2-informations-background {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: end;
-    text-align: center;
-}
-
-.rdr2-section-1 {
-    background-image: url(../images/red-dead-redemption-2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 1080px;
-    display: flex;
-}
-
-.rdr2-section-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: black;
-}
-
-.container-rdr-2 {
-    margin: 25px;
-    display: flex;
-}
-
-.titre-rdr2-section-2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.rdr2, .rdr-online {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    /* overflow: hidden; */
-    margin: 25px;
-}
-
-.rdr2-videos {
-    padding: 25px;
-}
-
-.section-cyberpunk-2, .rdr2-section-2 {
-    display: flex;
-    padding: 100px 0 100px;
-    background-color: #000000;
-}
-
-.section-cyberpunk-2 div {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
 }
 
 p, ul, h2, h3 {
@@ -117,6 +24,10 @@ h2, h3 {
     font-style: normal;
 }
 
+h3 {
+    font-size: 35px;
+}
+
 p, li {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
@@ -126,32 +37,90 @@ p, li {
     line-height: 1.5;
 }
 
-.titre-section-cyberpunk-2, .texte-section-cyberpunk-2, .titre-h2, .titre-h3, .texte-rdr2-section-2 {
-    color: #ffffff;    
-    margin: 0;
+/* Commun à Cyberpunk et RDR2 */
+.section-1-rdr2, .titre-h2, .section-2-pages-jeux, .contenu-jeux {
+    color: #ffffff;
+}
+
+/* Première section de la page */
+.section-1-cyberpunk, .section-1-rdr2 {
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+    display: flex;    
+}
+
+.description-background-cyberpunk, .informations-background-cyberpunk, 
+.description-background-rdr2, .informations-background-rdr2 {
+    width: 50%;
     padding: 25px;
 }
 
-.titre-section-cyberpunk-2 {
-    font-size: 35px;
+.description-background-cyberpunk, .informations-background-cyberpunk, 
+.informations-background-rdr2 {
+    display: flex;
+    justify-content: center;
 }
 
-.texte-section-cyberpunk-2 {
+/* Cyberpunk */
+/* Première section de la page */
+.section-1-cyberpunk {
+    background-image: url(../images/pages-jeux/cyberpunk-2077/cyberpunk-background.jpg);
+    max-height: 100vh;
+}
+
+.description-background-cyberpunk {
+    flex-direction: column;
+    padding-right: 35%;
+}
+
+.informations-background-cyberpunk {
+    align-items: center;
+}
+
+/* RDR 2 */
+/* Première section de la page */
+.section-1-rdr2 {
+    background-image: url(../images/red-dead-redemption-2.jpg);
+}
+
+.informations-background-rdr2 {
+    align-items: end;
+}
+
+/* Deuxième section des pages Cyberpunk et RDR2 */
+.section-2-pages-jeux {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    width: 100%;
+    padding: 100px 0 100px;
+    align-items: center;
+}
+
+.container-pages-jeux {
+    display: flex;
+}
+
+.contenu-jeux {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.texte-section-2-pages-jeux {
     font-size: 25px;
     word-spacing: 1px;
 }
 
-.night-city, .nouveautes {
-    align-content: start;
-    text-align: center;
-}
-
-.video-1, .video-2 {
+.contenu-jeux-videos {
     padding: 25px;
     align-content: center;
 }
 
-/* Galeries Images Pages Jeux */
+/* Galeries Images */
 .galerie-cyberpunk {
     background-color: #fcee0a;
 }

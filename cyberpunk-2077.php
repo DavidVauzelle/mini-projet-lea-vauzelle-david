@@ -29,7 +29,7 @@
                 </p>    
             </div>
             <div class="informations-background-cyberpunk">
-                <h2>Cyberpunk 2077</h2>    
+                <!-- <h2>Cyberpunk 2077</h2>     -->
                 <ul>
                     <li>Plateforme : PS4, PS5</li>
                     <li>Sortie : 10/12/2020</li>
@@ -39,39 +39,6 @@
                 </ul>    
             </div>    
         </section>
-
-        <!-- <section class="section-cyberpunk-2">
-            <div class="night-city">
-                <h3 class="titre-section-cyberpunk-2">NIGHT CITY</h3>    
-                <p class="texte-section-cyberpunk-2">
-                    Night City regorge de choses à faire, d'endroits à voir et de gens à rencontrer. 
-                    Et vous êtes libre d'aller où vous voulez, quand vous voulez, comme vous voulez. 
-                    Des quartiers chics de Corpo Plaza aux vastes étendues sauvages des Badlands, 
-                    Night City foisonne de secrets qui ne demandent qu'à être découverts.
-                </p>
-            </div>    
-            <div class="video-1">
-                <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/Y4x_FjuwV4M?si=nFP0qZ_Cof6KSqd7" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
-                </iframe>
-            </div>    
-            <div class="nouveautes">
-                <h3 class="titre-section-cyberpunk-2">NOUVEAUTÉS</h3>    
-                <p class="texte-section-cyberpunk-2">
-                    Découvrez Cyberpunk 2077 sous un nouveau jour : montez à bord du système de métro entièrement fonctionnel NCART, 
-                    écoutez des morceaux premios en explorant les rues grâce au Radioport,  
-                    ou invitez votre partenaire à l'appartement de V pour passer un peu de temps ensemble.  
-                    Toutes ces fonctionnalités et bien d'autres vous attendent dans Night City ! 
-                </p>      
-            </div> 
-            <div class="video-2">
-                <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </div> 
-        </section> -->
 
         <section class="section-2-pages-jeux">
             <h3 class="titre-h3">NIGHT CITY</h3>
@@ -84,8 +51,8 @@
                         Night City foisonne de secrets qui ne demandent qu'à être découverts.
                     </p>
                 </div>
-                <div class="jeu">
-                    <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/Y4x_FjuwV4M?si=nFP0qZ_Cof6KSqd7" title="YouTube video player" 
+                <div class="contenu-jeux">
+                    <iframe class="contenu-jeux-videos" width="75%" height="315" src="https://www.youtube-nocookie.com/embed/Y4x_FjuwV4M?si=nFP0qZ_Cof6KSqd7" title="YouTube video player" 
                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                         web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
                     </iframe>
@@ -93,15 +60,15 @@
             </div>
 
             <h3 class="titre-h3">Le monde de Red Dead Online</h3>
-            <div class="page-jeu-container">
-                <div class="contenu-jeu">
-                    <iframe width="75%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
+            <div class="container-pages-jeux">
+                <div class="contenu-jeux">
+                    <iframe class="contenu-jeux-videos" width="75%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                         web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
                 </div>
-                <div class="contenu-jeu">
-                    <p class="texte-page-jeu-section-2"> 
+                <div class="contenu-jeux">
+                    <p class="texte-section-2-pages-jeux"> 
                         Découvrez Cyberpunk 2077 sous un nouveau jour : montez à bord du système de métro entièrement fonctionnel NCART, 
                         écoutez des morceaux premios en explorant les rues grâce au Radioport,  
                         ou invitez votre partenaire à l'appartement de V pour passer un peu de temps ensemble.  
