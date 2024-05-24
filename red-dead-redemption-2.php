@@ -39,7 +39,7 @@
             </div>    
         </section>
 
-        <section class="section-2-rdr-2, section-2-pages-jeux">
+        <section class="section-2-pages-jeux">
             <h3 class="titre-h3">Une épopée sur l’honneur et la loyauté</h3>     
             <div class="container-pages-jeux">
                 <div class="contenu-jeux">

@@ -22,15 +22,15 @@
                 <h1>Contactez-nous</h1>
                 <div class="champs-formulaire">
                     <label for="name">Nom* : </label>
-                    <input type="text" id="name" name="text" placeholder="Votre Nom" required>     
+                    <input type="text" id="name" name="text" placeholder="Dupont" required>     
                 </div> 
                 <div class="champs-formulaire">
                     <label for="first_name">Prénom* : </label>
-                    <input type="text" id="first_name" name="text" placeholder="Votre Prénom" required> 
+                    <input type="text" id="first_name" name="text" placeholder="Nicolas" required> 
                 </div>  
                 <div class="champs-formulaire">
                     <label for="email">Email* : </label>
-                    <input type="email" id="email" name="email" placeholder="Votre adresse Email"required> 
+                    <input type="email" id="email" name="email" placeholder="nicolas.duppont@exemple.fr"required> 
                 </div>
                 <div class="champs-formulaire">
                     <label for="contact_choice">Sujet* : </label>

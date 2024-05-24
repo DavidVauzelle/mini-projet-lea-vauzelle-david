@@ -38,19 +38,22 @@
                 <a href="cyberpunk-2077.php">
                     <h2>Cyberpunk 2077</h2>    
                 </a>
-                <img src="./images/cyberpunk-2077.jpg" alt="Image d'illustration de Cyberpunk 2077">
+                <img src="https://cdn-l-cyberpunk.cdprojektred.com/wallpapers/1920x1080/V-V2-en.jpg" 
+                alt="Image d'illustration de Cyberpunk 2077">
             </article>
             <article>
                 <a href="red-dead-redemption-2.php">
                     <h2>Red Dead Redemption 2</h2>    
                 </a>
-                <img src="./images/red-dead-redemption-2.jpg" alt="Image d'illustration de Red Dead Redemption 2">  
+                <img src="https://mrwallpaper.com/images/hd/red-dead-redemption-2-hd-games-4k-wallpaper-image-background-c0bv26za4hfx1lam.jpg" 
+                alt="Image d'illustration de Red Dead Redemption 2">  
             </article>
             <article>
                 <a href="the-last-of-us-remastered.php">
                     <h2>The Last of US Ramastered</h2>    
                 </a>
-                <img src="./images/the-last-of-us-remastered.jpg" alt="Image d'illustration de The Last of US Remastered">   
+                <img src="https://wallpaper.forfun.com/fetch/15/15dd1b1e45b511128fb87cc652b70538.jpeg" 
+                alt="Image d'illustration de The Last of US Remastered">   
             </article>
         </section>    
     </main>

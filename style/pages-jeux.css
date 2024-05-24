@@ -38,40 +38,46 @@ p, li {
 }
 
 /* Commun à Cyberpunk et RDR2 */
-.section-1-rdr2, .titre-h2, .section-2-pages-jeux, .contenu-jeux {
+.section-1-rdr2, .section-1-tlou, .section-2-tlou, .titre-h2, .section-2-pages-jeux, .contenu-jeux {
     color: #ffffff;
 }
 
 /* Première section de la page */
-.section-1-cyberpunk, .section-1-rdr2 {
+.section-1-cyberpunk, .section-1-rdr2, .section-1-tlou {
     background-size: cover;
     background-position: center;
-    height: 1080px;
-    display: flex;    
+    display: flex; 
+    height: 100vh;
+    width: auto;
 }
 
 .description-background-cyberpunk, .informations-background-cyberpunk, 
-.description-background-rdr2, .informations-background-rdr2 {
+.description-background-rdr2, .informations-background-rdr2,
+.description-background-tlou, .informations-background-tlou {
     width: 50%;
     padding: 25px;
 }
 
 .description-background-cyberpunk, .informations-background-cyberpunk, 
-.informations-background-rdr2 {
+.informations-background-rdr2,
+.description-background-tlou, .informations-background-tlou {
     display: flex;
     justify-content: center;
+}
+
+.description-background-cyberpunk, .description-background-tlou {
+    flex-direction: column;
+    padding-right: 35%;
+}
+
+.informations-background-rdr2, .informations-background-tlou {
+    align-items: end;
 }
 
 /* Cyberpunk */
 /* Première section de la page */
 .section-1-cyberpunk {
-    background-image: url(../images/pages-jeux/cyberpunk-2077/cyberpunk-background.jpg);
-    max-height: 100vh;
-}
-
-.description-background-cyberpunk {
-    flex-direction: column;
-    padding-right: 35%;
+    background-image: url(https://cdn-l-cyberpunk.cdprojektred.com/wallpapers/1920x1080/Cyberpunk2077NG_Cover_art_RGB-en.jpg);
 }
 
 .informations-background-cyberpunk {
@@ -81,14 +87,10 @@ p, li {
 /* RDR 2 */
 /* Première section de la page */
 .section-1-rdr2 {
-    background-image: url(../images/red-dead-redemption-2.jpg);
+    background-image: url(https://mrwallpaper.com/images/hd/red-dead-redemption-2-hd-games-4k-wallpaper-image-background-c0bv26za4hfx1lam.jpg);
 }
 
-.informations-background-rdr2 {
-    align-items: end;
-}
-
-/* Deuxième section des pages Cyberpunk et RDR2 */
+/* Deuxième section des pages jeux */
 .section-2-pages-jeux {
     display: flex;
     flex-direction: column;
@@ -120,6 +122,17 @@ p, li {
     align-content: center;
 }
 
+/* TLOU Remastered */
+/* Première section de la page */
+.section-1-tlou {
+    background-image: url(https://wallpaper.forfun.com/fetch/c3/c3606bfbc016aa82628c7c1a2b8c19d4.jpeg);
+}
+
+/* Deuxième section de la page */
+.titre-h3-tlou, .texte-section-2-tlou {
+    color: #000000;
+}
+
 /* Galeries Images */
 .galerie-cyberpunk {
     background-color: #fcee0a;
@@ -127,6 +140,10 @@ p, li {
 
 .galerie-rdr-2 {
     background-color: #c00;
+}
+
+.galerie-tlou {
+    background-color: #000000;    
 }
 
 .galerie {
