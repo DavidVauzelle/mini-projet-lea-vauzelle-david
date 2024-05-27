@@ -1,3 +1,36 @@
+<?php
+
+// 5) Connexion à la base
+// Paramètres de connexion à la base de données
+$serveur = "localhost";
+$utilisateur = "root";
+$motdepasse = "";
+$nomBaseDeDonnees = "mini_projet_lea_vauzelle_david";
+ 
+// Connexion à la base de données
+$connexion = mysqli_connect($serveur, $utilisateur, $motdepasse, $nomBaseDeDonnees);
+ 
+if (!$connexion) {
+    die("Connexion échouée : " . mysqli_connect_error());
+}
+// echo 'connexion bdd réussie';
+
+// 6) Vérification de la soumission du formulaire
+print_r ($_POST);
+
+// $_POST est t'il vide ?
+if (isset($_POST['Envoyer'])) {
+    $nom = $_POST['Nom'];
+    $prenom = $_POST['Prénom'];
+    $email = $_POST['Email'];
+    $sujet = $_POST['Sujet'];
+    $message = $_POST['Commentaire'];
+} 
+// else if (empty($_POST)) {
+//     echo 'Le formulaire n\'a pas été soumis correctement';
+//     exit();
+// }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,7 +39,7 @@
     <meta name="description" content="page contact">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/nav-footer.css">
-    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/contacts.css">
     <?php include 'font.php';?> 
     <title>Formulaire de contact </title>
 </head>
@@ -18,7 +51,7 @@
 
     <main>   
         <div class="contenaire-contact">
-            <form class="formulaire-contact" action="/submit-form" method="post" enctype="multipart/form-data">
+            <form class="formulaire-contact" action="contacts.php" method="post" enctype="multipart/form-data">
                 <h1>Contactez-nous</h1>
                 <div class="champs-formulaire">
                     <label for="name">Nom* : </label>
