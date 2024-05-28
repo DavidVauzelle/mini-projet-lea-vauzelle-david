@@ -1,6 +1,4 @@
 <?php
-
-// 5) Connexion à la base
 // Paramètres de connexion à la base de données
 $serveur = "localhost";
 $utilisateur = "root";
@@ -15,21 +13,35 @@ if (!$connexion) {
 }
 // echo 'connexion bdd réussie';
 
-// 6) Vérification de la soumission du formulaire
-print_r ($_POST);
+// Vérification de la soumission du formulaire
+// print_r ($_POST);
 
 // $_POST est t'il vide ?
-if (isset($_POST['Envoyer'])) {
-    $nom = $_POST['Nom'];
-    $prenom = $_POST['Prénom'];
-    $email = $_POST['Email'];
-    $sujet = $_POST['Sujet'];
-    $message = $_POST['Commentaire'];
-} 
-// else if (empty($_POST)) {
-//     echo 'Le formulaire n\'a pas été soumis correctement';
-//     exit();
-// }
+if (isset($_POST['envoyer'])) {
+        $nom = $_POST['nom'];
+        $prenom = $_POST['prenom'];
+        $email = $_POST['email'];
+        $sujet = $_POST['sujet'];
+        $message = $_POST['message'];   
+
+    // Vérifier si aucun champ du formulaire est vide
+
+    if (empty($nom) || empty($prenom) || empty($email) || empty($sujet) || empty($message)) {
+        echo 'Le formulaire n\'est pas saisi correctement';
+    } else {
+        $sql = "INSERT INTO contacts (nom, prenom, email, sujet, message) VALUES ('$nom', '$prenom', '$email', '$sujet', '$message')";
+        $resultat = mysqli_query($connexion, $sql);  
+    }
+    // Rediriger vers la page index lorsque le formulaire est envoyé avec succès
+    // Vérifier si la requête a réussi
+    if ($resultat) {
+        header('Location: index.php');
+    } else {
+        echo "Erreur d'insertion des données dans la base de données" . mysqli_error($connexion);
+    }
+    // Fermer la connexion
+    mysqli_close($connexion);
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -51,15 +63,15 @@ if (isset($_POST['Envoyer'])) {
 
     <main>   
         <div class="contenaire-contact">
-            <form class="formulaire-contact" action="contacts.php" method="post" enctype="multipart/form-data">
+            <form class="formulaire-contact" action="contacts.php" method="post">
                 <h1>Contactez-nous</h1>
                 <div class="champs-formulaire">
                     <label for="name">Nom* : </label>
-                    <input type="text" id="name" name="text" placeholder="Dupont" required>     
-                </div> 
+                    <input type="text" id="name" name="nom" placeholder="Dupont" required>     
+                </div>
                 <div class="champs-formulaire">
                     <label for="first_name">Prénom* : </label>
-                    <input type="text" id="first_name" name="text" placeholder="Nicolas" required> 
+                    <input type="text" id="first_name" name="prenom" placeholder="Nicolas" required> 
                 </div>  
                 <div class="champs-formulaire">
                     <label for="email">Email* : </label>
@@ -67,9 +79,9 @@ if (isset($_POST['Envoyer'])) {
                 </div>
                 <div class="champs-formulaire">
                     <label for="contact_choice">Sujet* : </label>
-                        <select id="contact-choice">
-                            <option value="Jeu(x) à ajouter">Jeu(x) à ajouter</option>
-                            <option value="Fonctionnalitée à ajouter">Fonctionnalitée à ajouter</option>
+                        <select id="contact-choice" name="sujet">
+                            <option value="Jeu">Jeu(x) à ajouter</option>
+                            <option value="Fonctionnalitee">Fonctionnalitée à ajouter</option>
                             <option value="Autre">Autre</option>
                         </select>
                 </div>   
@@ -84,8 +96,11 @@ if (isset($_POST['Envoyer'])) {
                         required></textarea>      
                 </div>
                 <div class="button-contact">
-                    <input class="input-button-formulaire" type="submit" value="Envoyer">
+                    <input class="input-button-formulaire" type="submit" name="envoyer" value="Envoyer">
                     <input class="input-button-formulaire" type="reset" value="Réinitialiser">
+                </div>
+                <div>
+                    
                 </div>
             </form>        
         </div>   
