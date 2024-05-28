@@ -106,7 +106,7 @@
                     </div>
                     <div>
                         <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/77776e33ef89349ed37e4eaea67d5a7a.jpg?im=Resize=1920" 
-                        alt="Image elle dépote cette arme !">
+                        alt="Image d'une arme qui dépote !">
                     </div>
                 </div>
             </div>

@@ -81,7 +81,7 @@
                 <h2 class="titre-h2">Galerie</h2>
                 <div class="galerie-images">
                     <div>
-                        <img src="https://images.pushsquare.com/screenshots/60839/large.jpg" alt="Imgage d'une montée d'eau dans une grande ville">
+                        <img src="https://images.pushsquare.com/screenshots/60839/large.jpg" alt="Imgage d'une montée des eaux dans une grande ville">
                     </div>
                     <div>
                         <img src="https://www.pssurf.com/_gfx/screenshots/max/2100_PREVIEW_SCREENSHOT2_426879.jpg" alt="Image d'un combat au corps à corps">
