@@ -81,7 +81,7 @@
         <section class="galerie-cyberpunk">
             <div class="galerie">
                 <h2>Galerie</h2>
-                <div class="galerie-images">
+                <!-- <div class="galerie-images">
                     <div>
                         <img src="https://cdn-l-cyberpunk.cdprojektred.com/wallpapers/1920x1080/A-mercenary-on-the-rise-en.jpg" 
                         alt="Image de V fumant en extérieur">
@@ -106,7 +106,30 @@
                         <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077_Love_this_town_RGB-en.jpg" 
                         alt="Image d'un plan de la ville depuis la voie rapide">
                     </div>
-                </div>
+                </div> -->
+
+                <!-- Récupération des images depuis le bdd et affichages de celles-ci dans la galerie -->
+                <?php
+                include 'connexion.php';
+
+                $sql = "SELECT * FROM `images` WHERE id_jeux = 1";
+                // $sql = "SELECT * FROM `images` INNER JOIN `jeux` ON jeux.id = images.id_jeux where id_jeux = 1";
+                $resultat = mysqli_query($connexion, $sql);
+
+                if (mysqli_num_rows($resultat) > 0) {
+                    echo '<div class="galerie-images">';
+                    foreach($resultat as $images) { 
+                        echo '<div>';
+                        echo '<img src='. $images['url'] . ' alt="' . $images['alt'] . '"><br>';
+                        echo '</div>';
+                    }
+                    echo '</div>';
+                } else {
+                    echo "Aucune image trouvé: " . mysqli_error($connexion); 
+                }
+
+                mysqli_close($connexion);
+                ?>
             </div>
         </section>   
     </main>

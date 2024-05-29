@@ -83,7 +83,7 @@
         <section class="galerie-rdr-2">
             <div class="galerie">
                 <h2 class="titre-h2">Galerie</h2>
-                <div class="galerie-images">
+                <!-- <div class="galerie-images">
                     <div>
                         <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/308fd1badeb457d60440b983217929f5.jpg?im=Resize=1920" 
                         alt="Imgage d'un magnifique paysage">
@@ -108,7 +108,29 @@
                         <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/77776e33ef89349ed37e4eaea67d5a7a.jpg?im=Resize=1920" 
                         alt="Image d'une arme qui dépote !">
                     </div>
-                </div>
+                </div> -->
+                <!-- Récupération des images depuis le bdd et affichages de celles-ci dans la galerie -->
+                <?php
+                include 'connexion.php';
+
+                $sql = "SELECT * FROM `images` WHERE id_jeux = 2";
+                // $sql = "SELECT * FROM `images` INNER JOIN `jeux` ON jeux.id = images.id_jeux where id_jeux = 1";
+                $resultat = mysqli_query($connexion, $sql);
+
+                if (mysqli_num_rows($resultat) > 0) {
+                    echo '<div class="galerie-images">';
+                    foreach($resultat as $images) { 
+                        echo '<div>';
+                        echo '<img src='. $images['url'] . ' alt="' . $images['alt'] . '"><br>';
+                        echo '</div>';
+                    }
+                    echo '</div>';
+                } else {
+                    echo "Aucune image trouvé: " . mysqli_error($connexion); 
+                }
+
+                mysqli_close($connexion);
+                ?>
             </div>
         </section>   
     </main>

@@ -79,7 +79,8 @@
         <section class="galerie-tlou">
             <div class="galerie">
                 <h2 class="titre-h2">Galerie</h2>
-                <div class="galerie-images">
+                <!-- <div class="galerie-images">
+
                     <div>
                         <img src="https://images.pushsquare.com/screenshots/60839/large.jpg" alt="Imgage d'une montée des eaux dans une grande ville">
                     </div>
@@ -100,7 +101,29 @@
                         <img src="https://bandofgeeks.fr/wp-content/uploads/2015/05/The-Last-of-Us-left-behind.jpg" 
                         alt="Image des filles assises après un moment difficile">
                     </div>
-                </div>
+                </div> -->
+                <!-- Récupération des images depuis le bdd et affichages de celles-ci dans la galerie -->
+                <?php
+                    include 'connexion.php';
+
+                    $sql = "SELECT * FROM `images` WHERE id_jeux = 3";
+                    // $sql = "SELECT * FROM `images` INNER JOIN `jeux` ON jeux.id = images.id_jeux where id_jeux = 1";
+                    $resultat = mysqli_query($connexion, $sql);
+
+                    if (mysqli_num_rows($resultat) > 0) {
+                        echo '<div class="galerie-images">';
+                        foreach($resultat as $images) { 
+                            echo '<div>';
+                            echo '<img src='. $images['url'] . ' alt="' . $images['alt'] . '"><br>';
+                            echo '</div>';
+                        }
+                        echo '</div>';
+                    } else {
+                        echo "Aucune image trouvé: " . mysqli_error($connexion); 
+                    }
+
+                    mysqli_close($connexion);
+                    ?>
             </div>
         </section>   
     </main>
