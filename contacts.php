@@ -3,11 +3,12 @@ include 'connexion.php';
 
 // $_POST est t'il vide ?
 if (isset($_POST['envoyer'])) {
-        $nom = $_POST['nom'];
-        $prenom = $_POST['prenom'];
-        $email = $_POST['email'];
-        $sujet = $_POST['sujet'];
-        $message = $_POST['message'];   
+    // mysqli_real_escape_string --> Protège des injections SQL
+        $nom = mysqli_real_escape_string($connexion, $_POST['nom']);
+        $prenom = mysqli_real_escape_string($connexion, $_POST['prenom']);
+        $email = mysqli_real_escape_string($connexion, $_POST['email']);
+        $sujet = mysqli_real_escape_string($connexion, $_POST['sujet']);
+        $message = mysqli_real_escape_string($connexion, $_POST['message']);   
 
     // Vérifier si aucun champ du formulaire est vide
 

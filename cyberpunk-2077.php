@@ -59,7 +59,7 @@
                 </div>    
             </div>
 
-            <h3 class="titre-h3">Le monde de Red Dead Online</h3>
+            <h3 class="titre-h3">Nouveautés</h3>
             <div class="container-pages-jeux">
                 <div class="contenu-jeux">
                     <iframe class="contenu-jeux-videos" width="75%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
