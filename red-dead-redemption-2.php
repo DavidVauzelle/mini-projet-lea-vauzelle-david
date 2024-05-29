@@ -18,6 +18,9 @@
     </header>
 
     <main>
+        <?php
+            include 'connexion.php';
+        ?>
         <section class="section-1-rdr2">	
             <div class="description-background-rdr2">
                 <h2>Hors-la-loi pour toujours</h2>    
@@ -111,8 +114,7 @@
                 </div> -->
                 <!-- Récupération des images depuis le bdd et affichages de celles-ci dans la galerie -->
                 <?php
-                include 'connexion.php';
-
+                
                 $sql = "SELECT * FROM `images` WHERE id_jeux = 2";
                 // $sql = "SELECT * FROM `images` INNER JOIN `jeux` ON jeux.id = images.id_jeux where id_jeux = 1";
                 $resultat = mysqli_query($connexion, $sql);
