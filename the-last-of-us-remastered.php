@@ -74,20 +74,20 @@
                     </div>    
                 </div>
             <?php endif; ?>
-            <h3 class="titre-h3-tlou"><?php echo $contenu2[1] ?></h3>
-            <div class="container-pages-jeux">
-                <div class="contenu-jeux">
-                    <iframe class="contenu-jeux-videos" width="75%" height="315" src="<?php echo $contenu2[3] ?>" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-                        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+            <?php if (isset($contenu2)) : ?>
+                <h3 class="titre-h3-tlou"><?php echo $contenu2[1] ?></h3>
+                <div class="container-pages-jeux">
+                    <div class="contenu-jeux">
+                        <iframe class="contenu-jeux-videos" width="75%" height="315" src="<?php echo $contenu2[3] ?>" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="contenu-jeux">
+                        <p class="texte-section-2-pages-jeux, texte-section-2-tlou"><?php echo $contenu2[2] ?></p>    
+                    </div>     
                 </div>
-                <div class="contenu-jeux">
-                    <p class="texte-section-2-pages-jeux, texte-section-2-tlou"><?php echo $contenu2[2] ?></p>    
-                </div>     
-            </div>
-            <?php
-            ?>
+            <?php endif; ?>
         </section>
 
         <section class="galerie-tlou">

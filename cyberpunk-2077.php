@@ -32,7 +32,6 @@
                 </p>    
             </div>
             <div class="informations-background-cyberpunk">
-                <!-- <h2>Cyberpunk 2077</h2>     -->
                 <ul>
                     <li>Plateforme : PS4, PS5</li>
                     <li>Sortie : 10/12/2020</li>
@@ -43,79 +42,62 @@
             </div>    
         </section>
 
-        <section class="section-2-pages-jeux">
-            <h3 class="titre-h3">NIGHT CITY</h3>
-            <div class="container-pages-jeux">
-                <div class="contenu-jeux">
-                    <p class="texte-section-2-pages-jeux">
-                        Night City regorge de choses à faire, d'endroits à voir et de gens à rencontrer. 
-                        Et vous êtes libre d'aller où vous voulez, quand vous voulez, comme vous voulez. 
-                        Des quartiers chics de Corpo Plaza aux vastes étendues sauvages des Badlands, 
-                        Night City foisonne de secrets qui ne demandent qu'à être découverts.
-                    </p>
-                </div>
-                <div class="contenu-jeux">
-                    <iframe class="contenu-jeux-videos" width="75%" height="315" src="https://www.youtube-nocookie.com/embed/Y4x_FjuwV4M?si=nFP0qZ_Cof6KSqd7" title="YouTube video player" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                        web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
-                    </iframe>
-                </div>    
-            </div>
+        <?php
+            $sql = "SELECT * FROM `contenu` WHERE id_jeux = 1";
+            $resultat = mysqli_query($connexion, $sql);
 
-            <h3 class="titre-h3">Nouveautés</h3>
-            <div class="container-pages-jeux">
-                <div class="contenu-jeux">
-                    <iframe class="contenu-jeux-videos" width="75%" height="315" src="https://www.youtube-nocookie.com/embed/7B4r1jbpS2A?si=D1eoqZvUwjJXBUKm" title="YouTube video player" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+            // fetch_all --> permet de stocker les données de la requête dans un tableau
+            $resultat = $resultat->fetch_all();
+
+            // Si résultat dans le tableau 0, on stock les données du tableau dans une variable
+            if (isset($resultat[0])) {
+                $contenu1 = $resultat[0];
+            }
+
+            // Si résultat dans le tableau 1, on stock les données du tableau dans une variable
+            if (isset($resultat[1])) {
+                $contenu2 = $resultat[1];
+            }
+        ?>
+
+        <section class="section-2-pages-jeux">
+            <?php if (isset($contenu1)) : ?>
+                <h3 class="titre-h3"><?php echo $contenu1[1] ?></h3>
+                <div class="container-pages-jeux">
+                    <div class="contenu-jeux">
+                        <p class="texte-section-2-pages-jeux"><?php echo $contenu1[2] ?></p>
+                    </div>
+                    <div class="contenu-jeux">
+                        <iframe class="contenu-jeux-videos" width="75%" height="315" src="<?php echo $contenu1[3] ?>" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                            web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
+                        </iframe>
+                    </div>    
                 </div>
-                <div class="contenu-jeux">
-                    <p class="texte-section-2-pages-jeux"> 
-                        Découvrez Cyberpunk 2077 sous un nouveau jour : montez à bord du système de métro entièrement fonctionnel NCART, 
-                        écoutez des morceaux premios en explorant les rues grâce au Radioport,  
-                        ou invitez votre partenaire à l'appartement de V pour passer un peu de temps ensemble.  
-                        Toutes ces fonctionnalités et bien d'autres vous attendent dans Night City !
-                    </p>      
-                </div>     
-            </div>   
+            <?php endif; ?>
+            <?php if (isset($contenu2)) : ?>      
+                <h3 class="titre-h3"><?php echo $contenu2[1] ?></h3>
+                <div class="container-pages-jeux">
+                    <div class="contenu-jeux">
+                        <iframe class="contenu-jeux-videos" width="75%" height="315" src="<?php echo $contenu2[3] ?>" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="contenu-jeux">
+                        <p class="texte-section-2-pages-jeux"><?php echo $contenu2[2] ?></p>      
+                    </div>     
+                </div>
+            <?php endif; ?>  
         </section>
 
         <section class="galerie-cyberpunk">
             <div class="galerie">
                 <h2>Galerie</h2>
-                <!-- <div class="galerie-images">
-                    <div>
-                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/wallpapers/1920x1080/A-mercenary-on-the-rise-en.jpg" 
-                        alt="Image de V fumant en extérieur">
-                    </div>
-                    <div>
-                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg" 
-                        alt="Image ou la tension est au maximum">
-                    </div>
-                    <div>
-                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077_Lucky_number_13_RGB-en.jpg" 
-                        alt="Image de la belle Judy">
-                    </div>
-                    <div>
-                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Lets_go_to_the_mall-en.jpg" 
-                        alt="Image d'un batiment de la ville">
-                    </div>
-                    <div>
-                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077_Always_bring_a_gun_to_a_knife-fight_RGB-en.jpg" 
-                        alt="Image d'un fight ou la lame est proche">
-                    </div>
-                    <div>
-                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077_Love_this_town_RGB-en.jpg" 
-                        alt="Image d'un plan de la ville depuis la voie rapide">
-                    </div>
-                </div> -->
-
                 <!-- Récupération des images depuis le bdd et affichages de celles-ci dans la galerie -->
                 <?php
 
                 $sql = "SELECT * FROM `images` WHERE id_jeux = 1";
-                // $sql = "SELECT * FROM `images` INNER JOIN `jeux` ON jeux.id = images.id_jeux where id_jeux = 1";
                 $resultat = mysqli_query($connexion, $sql);
 
                 if (mysqli_num_rows($resultat) > 0) {
