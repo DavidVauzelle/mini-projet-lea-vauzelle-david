@@ -181,5 +181,8 @@ img:hover {
 
 /* Responsive pour Mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  
+    .section-1-cyberpunk, .section-1-rdr2, .section-1-tlou {
+        background-image: none;    
+    }
+    
 }

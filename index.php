@@ -6,8 +6,8 @@
     <meta name="description" content="Voici mon deuxième projet"> 
     <title>Quelque uns de mes jeux préférés</title>
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="./style/nav-footer.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/nav-footer.css">
     <?php include 'font.php';?>
 </head>
 
@@ -44,7 +44,7 @@
             <h1><?php echo $contenuAccueil1[0] ?></h1>
             <p>
                 <?php echo $contenuAccueil1[1] ?>
-            </p>
+            </p>   
         <?php endif; ?>
     </header>
 

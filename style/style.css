@@ -40,7 +40,7 @@ p {
     font-weight: 400;
     font-style: normal; 
     font-size: 25px; 
-    padding: 100px; 
+    padding: 100px;
 }
 
 .images-accueil {
@@ -61,10 +61,38 @@ img {
 
 /* Responsive pour Tablette */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 30px;
+    }
 
+    h2 {
+        font-size: 25px;    
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        width: 95%;
+    }
 }
 
 /* Responsive pour Mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 22px;    
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 90%;
+    }
 }
