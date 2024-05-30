@@ -189,6 +189,10 @@ img:hover {
 
 /* Responsive pour Tablettes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .section-1-cyberpunk, .section-1-rdr2, .section-1-tlou {
+        background-position: center;    
+    }
+
     h1 {
         font-size: 30px;
     }
@@ -209,7 +213,12 @@ img:hover {
 /* Responsive pour Mobiles */
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .section-1-cyberpunk, .section-1-rdr2, .section-1-tlou {
-        background-image: none;    
+        background-image: none;
+        flex-direction: column;
+        align-items: center;
+        max-width: 767px;
+        height: auto;
+        overflow: hidden;
     }
 
     .section-1-cyberpunk {
@@ -224,15 +233,21 @@ img:hover {
         background-color: #000000;
     }
 
+    .description-background-cyberpunk, .description-background-rdr2, .description-background-tlou
+    .informations-background-cyberpunk, .informations-background-rdr2, .informations-background-tlou {
+        width: 100%;
+        overflow: hidden;
+    }
+
     h1 {
         font-size: 25px;
     }
 
-    h2 {
+    h2, .titre-h3, .titre-h3-tlou {
         font-size: 22px;    
     }
 
-    p {
+    p, .texte-section-2-pages-jeux {
         font-size: 18px;
     }
 
