@@ -21,24 +21,38 @@
         <?php
             include 'connexion.php';
         ?>
-        <section class="section-1-tlou">	
-            <div class="description-background-tlou">
-                <h2>Jusqu'où irez-vous pour survivre ?</h2>    
-                <p>
-                    The Last of Us, c’est l’histoire d’un voyage qui transcende deux individus que tout oppose pour les unir… à condition d’être prêt à prendre les risques que cela implique.
-                    Vivez l’aventure de Joel, un quadragénaire endurci par les épreuves de la vie, et d’Ellie, une adolescente née après l’Apocalypse qui a causé la chute de l’humanité. 
-                    Ensemble, ils vont devoir traverser le pays pour une cause qui les dépasse...
-                </p>    
-            </div>
-            <div class="informations-background-tlou">
-                <ul>
-                    <li>Plateforme : PS4</li>
-                    <li>Sortie : 30/07/2014</li>
-                    <li>Editeur : Sony Interactive Entertainment Europe</li>
-                    <li>Genres : Action, Aventure</li>
-                    <li>Note : 4.81/5</li>    
-                </ul>    
-            </div>    
+
+        <?php
+            $sql = "SELECT  `titre_description`, `description`, `plateforme`, `annee_sortie`, `editeur`, `genres`, `note` FROM `jeux` WHERE id = 3";
+            $resultat = mysqli_query($connexion, $sql);
+
+            // fetch_all --> permet de stocker les données de la requête dans un tableau
+            $resultat = $resultat->fetch_all();
+
+            // Si résultat dans le tableau 0, on stock les données du tableau dans une variable
+            if (isset($resultat[0])) {
+                $contenuSection1 = $resultat[0];
+            }
+        ?>
+
+        <section class="section-1-tlou">
+            <?php if (isset($contenuSection1)) : ?>		
+                <div class="description-background-tlou">
+                    <h2><?php echo $contenuSection1[0] ?></h2>    
+                    <p>
+                        <?php echo $contenuSection1[1] ?>    
+                    </p>    
+                </div>
+                <div class="informations-background-tlou">
+                    <ul>
+                        <li>Plateforme : <?php echo $contenuSection1[2] ?></li>
+                        <li>Sortie : <?php echo $contenuSection1[3] ?></li>
+                        <li>Editeur : <?php echo $contenuSection1[4] ?></li>
+                        <li>Genres : <?php echo $contenuSection1[5] ?></li>
+                        <li>Note : <?php echo $contenuSection1[6] ?></li>   
+                    </ul>    
+                </div>
+            <?php endif; ?>  
         </section>
 
         <?php

@@ -21,25 +21,38 @@
         <?php
             include 'connexion.php';
         ?>
-        <section class="section-1-cyberpunk">	
-            <div class="description-background-cyberpunk">
-               <h2>VOTRE LÉGENDE COMMENCE ICI</h2>    
-                <p>
-                    Préparez le coup du siècle : volez un implant unique qui est la clé de l'immortalité, et forgez votre légende dans le vaste mode ouvert qu'est Night City. 
-                    Ici, les choix que vous faites changeront le cours de l'histoire et les relations avec les personnages qui vous entourent. 
-                    Complétez des missions diverses et variées pour vous faire un nom, et passez de simple mercenaire à cyberpunk de légende. 
-                    Au fil de l'aventure, vous lèverez également le voile sur le mystère qui plane autour de ce fameux implant que tout le monde vous envie.    
-                </p>    
-            </div>
-            <div class="informations-background-cyberpunk">
-                <ul>
-                    <li>Plateforme : PS4, PS5</li>
-                    <li>Sortie : 10/12/2020</li>
-                    <li>Editeur : CD PROJECT</li>
-                    <li>Genres : RPG, Spécifiques</li>
-                    <li>Note : 4.33/5</li>    
-                </ul>    
-            </div>    
+
+        <?php
+            $sql = "SELECT  `titre_description`, `description`, `plateforme`, `annee_sortie`, `editeur`, `genres`, `note` FROM `jeux` WHERE id = 1";
+            $resultat = mysqli_query($connexion, $sql);
+
+            // fetch_all --> permet de stocker les données de la requête dans un tableau
+            $resultat = $resultat->fetch_all();
+
+            // Si résultat dans le tableau 0, on stock les données du tableau dans une variable
+            if (isset($resultat[0])) {
+                $contenuSection1 = $resultat[0];
+            }
+        ?>
+
+        <section class="section-1-cyberpunk">
+            <?php if (isset($contenuSection1)) : ?>
+                <div class="description-background-cyberpunk">
+                <h2><?php echo $contenuSection1[0] ?></h2>    
+                    <p>
+                        <?php echo $contenuSection1[1] ?>    
+                    </p>    
+                </div>
+                <div class="informations-background-cyberpunk">
+                    <ul>
+                        <li>Plateforme : <?php echo $contenuSection1[2] ?></li>
+                        <li>Sortie : <?php echo $contenuSection1[3] ?></li>
+                        <li>Editeur : <?php echo $contenuSection1[4] ?></li>
+                        <li>Genres : <?php echo $contenuSection1[5] ?></li>
+                        <li>Note : <?php echo $contenuSection1[6] ?></li>    
+                    </ul>    
+                </div>
+            <?php endif; ?>   
         </section>
 
         <?php
@@ -120,6 +133,5 @@
     
     <!-- Pour récupérer le footer -->
     <?php include 'footer.php';?>
-    
 </body>
 </html>

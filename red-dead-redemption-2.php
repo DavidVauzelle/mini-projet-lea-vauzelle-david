@@ -21,25 +21,38 @@
         <?php
             include 'connexion.php';
         ?>
-        <section class="section-1-rdr2">	
-            <div class="description-background-rdr2">
-                <h2>Hors-la-loi pour toujours</h2>    
-                <p>
-                    Amérique, 1899. Arthur Morgan et le gang de Van der Linde sont des hors-la-loi fugitifs. 
-                    À leurs trousses, des agents fédéraux et les meilleurs chasseurs de primes du pays. 
-                    La bande commet méfaits sur méfaits dans les vastes terres sauvages de l’Amérique dans un seul et unique but : survivre. 
-                    Alors que des querelles internes menacent de faire voler la bande en éclats, Arthur est tiraillé entre ses propres idéaux et sa loyauté envers la bande qui l’a élevé.
-                </p>    
-            </div>
-            <div class="informations-background-rdr2">
-                <ul>
-                    <li>Plateforme : PS4</li>
-                    <li>Sortie : 26/10/2018</li>
-                    <li>Editeur : Rockstar Games</li>
-                    <li>Genres : Action, Aventure, Spécifiques</li>
-                    <li>Note : 4.71/5</li>    
-                </ul>    
-            </div>    
+
+        <?php
+            $sql = "SELECT  `titre_description`, `description`, `plateforme`, `annee_sortie`, `editeur`, `genres`, `note` FROM `jeux` WHERE id = 2";
+            $resultat = mysqli_query($connexion, $sql);
+
+            // fetch_all --> permet de stocker les données de la requête dans un tableau
+            $resultat = $resultat->fetch_all();
+
+            // Si résultat dans le tableau 0, on stock les données du tableau dans une variable
+            if (isset($resultat[0])) {
+                $contenuSection1 = $resultat[0];
+            }
+        ?>
+
+        <section class="section-1-rdr2">
+            <?php if (isset($contenuSection1)) : ?>	
+                <div class="description-background-rdr2">
+                <h2><?php echo $contenuSection1[0] ?></h2>    
+                    <p>
+                        <?php echo $contenuSection1[1] ?>    
+                    </p>    
+                </div>
+                <div class="informations-background-rdr2">
+                    <ul>
+                        <li>Plateforme : <?php echo $contenuSection1[2] ?></li>
+                        <li>Sortie : <?php echo $contenuSection1[3] ?></li>
+                        <li>Editeur : <?php echo $contenuSection1[4] ?></li>
+                        <li>Genres : <?php echo $contenuSection1[5] ?></li>
+                        <li>Note : <?php echo $contenuSection1[6] ?></li>    
+                    </ul>    
+                </div>
+            <?php endif; ?>    
         </section>
 
         <?php
