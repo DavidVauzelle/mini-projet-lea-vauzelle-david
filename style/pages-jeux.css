@@ -176,7 +176,21 @@ img:hover {
 
 /* Responsive pour Tablette */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 30px;
+    }
 
+    h2 {
+        font-size: 25px;    
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .galerie-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* Responsive pour Mobile */
@@ -185,4 +199,19 @@ img:hover {
         background-image: none;    
     }
     
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 22px;    
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .galerie-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
