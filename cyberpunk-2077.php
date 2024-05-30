@@ -51,7 +51,7 @@
                         <li>Sortie : <?php echo $contenuSection1[3] ?></li>
                         <li>Editeur : <?php echo $contenuSection1[4] ?></li>
                         <li>Genres : <?php echo $contenuSection1[5] ?></li>
-                        <li>Note : <?php echo $contenuSection1[6] ?></li>    
+                        <li>Note : <?php echo $contenuSection1[6] ?>/5</li>    
                     </ul>    
                 </div>
             <?php endif; ?>   
