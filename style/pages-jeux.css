@@ -173,3 +173,13 @@ img {
 img:hover {
     transform: scale(1.25);
 }
+
+/* Responsive pour Tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Responsive pour Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  
+}
