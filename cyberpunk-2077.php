@@ -32,6 +32,8 @@
             // Si résultat dans le tableau 0, on stock les données du tableau dans une variable
             if (isset($resultat[0])) {
                 $contenuSection1 = $resultat[0];
+                // Pour afficher la date au format FR (format US dans la bdd)
+                $contenuSection1[3] = date("d/m/Y", strtotime($contenuSection1[3]));
             }
         ?>
 
