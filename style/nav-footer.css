@@ -62,3 +62,16 @@ footer a:hover{
     background-color: #ddd;
     color: black;
 }
+
+/* Responsive pour Tablettes */
+/* @media screen and (min-width: 600px) and (max-width: 800px) { */
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+
+    }
+
+/* Responsive pour Mobile */
+/* @media screen and (min-width: 350px) and (max-width: 500px) { */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+ 
+
+    }
