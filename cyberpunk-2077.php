@@ -83,7 +83,7 @@
                         <p class="texte-section-2-pages-jeux"><?php echo $contenu1[2] ?></p>
                     </div>
                     <div class="contenu-jeux">
-                        <iframe class="contenu-jeux-videos" width="75%" height="315" src="<?php echo $contenu1[3] ?>" title="YouTube video player" 
+                        <iframe class="contenu-jeux-videos" width="90%" height="375" src="<?php echo $contenu1[3] ?>" title="YouTube video player" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                             web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
                         </iframe>
@@ -94,7 +94,7 @@
                 <h3 class="titre-h3"><?php echo $contenu2[1] ?></h3>
                 <div class="container-pages-jeux">
                     <div class="contenu-jeux">
-                        <iframe class="contenu-jeux-videos" width="75%" height="315" src="<?php echo $contenu2[3] ?>" title="YouTube video player" 
+                        <iframe class="contenu-jeux-videos" width="90%" height="475" src="<?php echo $contenu2[3] ?>" title="YouTube video player" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>

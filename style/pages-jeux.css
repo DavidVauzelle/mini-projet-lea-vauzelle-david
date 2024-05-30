@@ -174,14 +174,27 @@ img:hover {
     transform: scale(1.25);
 }
 
-/* Responsive pour Tablette */
+/* Responsive commun aux Tablettes et Mobiles */
+@media screen and (min-width: 320px) and (max-width: 991px) {
+    .container-pages-jeux {
+        flex-direction: column;
+    }
+
+    .galerie {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* Responsive pour Tablettes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     h1 {
         font-size: 30px;
     }
 
     h2 {
-        font-size: 25px;    
+        font-size: 25px;
     }
 
     p {
@@ -189,16 +202,28 @@ img:hover {
     }
 
     .galerie-images {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Responsive pour Mobile */
+/* Responsive pour Mobiles */
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .section-1-cyberpunk, .section-1-rdr2, .section-1-tlou {
         background-image: none;    
     }
+
+    .section-1-cyberpunk {
+        background-color: #fcee0a;
+    }
     
+    .section-1-rdr2 {
+        background-color: #c00;
+    }
+
+    .section-1-tlou {
+        background-color: #000000;
+    }
+
     h1 {
         font-size: 25px;
     }
@@ -209,6 +234,21 @@ img:hover {
 
     p {
         font-size: 18px;
+    }
+
+    .contenu-jeux-videos {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenu-jeux {    
+        max-width: 100%;
+        /* overflow: hidden; */
+        margin: 0;
+    }
+
+    iframe {
+        height: 315px;
     }
 
     .galerie-images {
