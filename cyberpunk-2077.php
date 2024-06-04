@@ -77,7 +77,7 @@
 
         <section class="section-2-pages-jeux">
             <?php if (isset($contenu1)) : ?>
-                <h3 class="titre-h3"><?php echo $contenu1[1] ?></h3>
+                <h3 class="titre-h3"><?= $contenu1[1] ?></h3>
                 <div class="container-pages-jeux">
                     <div class="contenu-jeux">
                         <p class="texte-section-2-pages-jeux"><?php echo $contenu1[2] ?></p>
