@@ -3,7 +3,7 @@
 $serveur = "localhost";
 $utilisateur = "root";
 $motdepasse = "";
-$nomBaseDeDonnees = "mini_projet_lea_vauzelle_david";
+$nomBaseDeDonnees = "mini-projet-lea-vauzelle-david";
  
 // Connexion à la base de données
 $connexion = mysqli_connect($serveur, $utilisateur, $motdepasse, $nomBaseDeDonnees);
