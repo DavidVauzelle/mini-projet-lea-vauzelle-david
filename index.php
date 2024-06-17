@@ -6,6 +6,7 @@
     <meta name="description" content="Voici mon deuxième projet"> 
     <title>Quelque uns de mes jeux préférés</title>
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="./style/nav-footer.css">
     <?php include 'font.php';?>
